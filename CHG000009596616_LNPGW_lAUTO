@@ -1,0 +1,1809 @@
+jht005cc:/home/amdocst3/rg020t> sudo -iu lnpgw
+Last successful login: Sat Sep 21 23:50:48 CDT 2024 on  /dev/pts/1
+Setting environment for domain lnp_e2a
+jht005cc:/home/lnpgw/lnpgw cd /bto/appl/LNPGW/config
+jht005cc:/bto/appl/LNPGW/config ls -lrt
+total 732
+-rw-r-----   1 lnpgw      lnpgw        13602 Jun 23  2017 GlobalPlatform.properties.20170623
+-rw-r-----   1 lnpgw      lnpgw        14238 Sep 15  2019 GlobalPlatform.properties_20190915
+-rw-r-----   1 lnpgw      lnpgw        14412 Oct 16  2020 GlobalPlatform.properties_bkp_20201017
+-rw-r-----   1 lnpgw      lnpgw         6841 Oct 16  2020 Global.properties_bkp_20201017
+-rw-r--r--   1 lnpgw      lnpgw          268 Oct 17  2020 RponSrv.ini
+-rw-r--r--   1 lnpgw      lnpgw        22137 Oct 17  2020 lnpgw.cfg
+-rw-r--r--   1 lnpgw      lnpgw          422 Oct 17  2020 startup.cfg
+drwxr-xr-x   2 lnpgw      lnpgw           96 Oct 17  2020 lib
+drwxr-xr-x   2 lnpgw      lnpgw         1024 Dec 11  2020 fac_chk
+-rw-r-----   1 lnpgw      lnpgw         6841 Jul 17  2021 Global.properties_bkp_20210716
+-rw-r--r--   1 lnpgw      lnpgw         6841 Jul 17  2021 Global.properties
+drwxr-x---   4 lnpgw      lnpgw         2048 Jul 29  2022 cm
+drwxr-xr-x  26 lnpgw      lnpgw         1024 Aug 24  2023 initial
+drwxr-xr-x   4 lnpgw      lnpgw         1024 Aug 25  2023 DR_with_Prod_configs
+drwxr-xr-x   4 lnpgw      lnpgw         1024 Aug 25  2023 DR_with_ST1_configs
+-rwxr-xr-x   1 lnpgw      lnpgw       256000 Aug 25  2023 DR_Exersize.tar.xz
+-rwxr-xr-x   1 lnpgw      lnpgw          118 Aug 30  2023 DR_Akash_Test.sh
+-rwxr-xr-x   1 lnpgw      lnpgw         2576 Aug 30  2023 DR_Activate.sh
+-rwxr-x---   1 lnpgw      lnpgw         1377 Aug 30  2023 DR_RollBack.sh
+-rw-r--r--   1 lnpgw      lnpgw          123 Sep  3  2023 lnp.desc
+-rw-r--r--   1 lnpgw      lnpgw        14267 Sep  3  2023 GlobalPlatform.properties
+-rw-r-----   1 lnpgw      lnpgw          196 Sep  3  2023 audit.log
+jht005cc:/bto/appl/LNPGW/config cd  DR_with_Prod_configs
+jht005cc:/bto/appl/LNPGW/config/DR_with_Prod_configs ls -lrt
+total 36
+drwxr-x---   2 lnpgw      lnpgw         1024 Aug 25  2023 SoaManagerWS.DR.jht005cc
+drwxr-x---   2 lnpgw      lnpgw         1024 Aug 25  2023 DR.jht005cc
+-rwxr-x---   1 lnpgw      lnpgw          742 Sep  3  2023 application-jht005cc.properties
+-rwxr-x---   1 lnpgw      lnpgw         2792 Sep  3  2023 lnpgwstart
+-rwxr-x---   1 lnpgw      lnpgw          982 Sep  3  2023 active_node
+-rwxr-x---   1 lnpgw      lnpgw          784 Sep  3  2023 AttIntCancel.DR.jht005cc.properties
+-rwxr-x---   1 lnpgw      lnpgw          817 Sep  3  2023 CvoipGw.DR.jht005cc.properties
+-rwxr-x---   1 lnpgw      lnpgw         3125 Sep  3  2023 Inbounds.DR.jht005cc.xml
+-rwxr-x---   1 lnpgw      lnpgw          590 Sep  3  2023 PsocTypeB.DR.jht005cc.properties
+-rwxr-x---   1 lnpgw      lnpgw         1810 Sep  3  2023 Reporter.DR.jht005cc.properties
+-rwxr-x---   1 lnpgw      lnpgw         1582 Sep  3  2023 jdbutils.DR.jht005cc.properties
+jht005cc:/bto/appl/LNPGW/config/DR_with_Prod_configs cd ..
+jht005cc:/bto/appl/LNPGW/config ./DR_Activate.sh
+2024-09-21 23:59:08 CDT DR_Activate.sh executed
+Backup is Done
+DR is now pointing to ST1
+Done
+jht005cc:/bto/appl/LNPGW/config cd  DR_with_Prod_configs
+jht005cc:/bto/appl/LNPGW/config/DR_with_Prod_configs ls -lrt
+total 36
+drwxr-x---   2 lnpgw      lnpgw         1024 Aug 25  2023 SoaManagerWS.DR.jht005cc
+drwxr-x---   2 lnpgw      lnpgw         1024 Sep 21 23:59 DR.jht005cc
+-rwxr-x---   1 lnpgw      lnpgw          742 Sep 21 23:59 application-jht005cc.properties
+-rwxr-x---   1 lnpgw      lnpgw         2792 Sep 21 23:59 lnpgwstart
+-rwxr-x---   1 lnpgw      lnpgw          982 Sep 21 23:59 active_node
+-rwxr-x---   1 lnpgw      lnpgw          784 Sep 21 23:59 AttIntCancel.DR.jht005cc.properties
+-rwxr-x---   1 lnpgw      lnpgw          817 Sep 21 23:59 CvoipGw.DR.jht005cc.properties
+-rwxr-x---   1 lnpgw      lnpgw         3124 Sep 21 23:59 Inbounds.DR.jht005cc.xml
+-rwxr-x---   1 lnpgw      lnpgw          590 Sep 21 23:59 PsocTypeB.DR.jht005cc.properties
+-rwxr-x---   1 lnpgw      lnpgw         1810 Sep 21 23:59 Reporter.DR.jht005cc.properties
+-rwxr-x---   1 lnpgw      lnpgw         1582 Sep 21 23:59 jdbutils.DR.jht005cc.properties
+jht005cc:/bto/appl/LNPGW/config/DR_with_Prod_configs cd SoaManagerWS.DR.jht005cc
+jht005cc:/bto/appl/LNPGW/config/DR_with_Prod_configs/SoaManagerWS.DR.jht005cc ls -lrt
+total 60
+-rwxr-x---   1 lnpgw      lnpgw         2831 Sep 21 23:59 OPSOAPACTIVITYService.wsdl
+-rwxr-x---   1 lnpgw      lnpgw         7793 Sep 21 23:59 OPSOAPNETWORKService.wsdl
+-rwxr-x---   1 lnpgw      lnpgw         2706 Sep 21 23:59 SoaManagerWSConfig.xml
+-rwxr-x---   1 lnpgw      lnpgw        15664 Sep 21 23:59 OPSOAPSVService.wsdl
+jht005cc:/bto/appl/LNPGW/config/DR_with_Prod_configs/SoaManagerWS.DR.jht005cc cd ..
+jht005cc:/bto/appl/LNPGW/config/DR_with_Prod_configs cd DR.jht005cc
+jht005cc:/bto/appl/LNPGW/config/DR_with_Prod_configs/DR.jht005cc ls -lrt
+total 222
+-rw-r-----   1 lnpgw      lnpgw        14485 Sep 21 23:59 GlobalPlatform.properties
+-rw-r-----   1 lnpgw      lnpgw          413 Sep 21 23:59 SGGNSIORPRD_6.ior
+-rw-r-----   1 lnpgw      lnpgw          413 Sep 21 23:59 SGGNSIORPRD_7.ior
+-rw-r-----   1 lnpgw      lnpgw          413 Sep 21 23:59 SGGNSIORPRD_8.ior
+-rw-r-----   1 lnpgw      lnpgw        14238 Sep 21 23:59 GlobalPlatform.properties_20190915
+-rw-r-----   1 lnpgw      lnpgw        14412 Sep 21 23:59 GlobalPlatform.properties_20200718
+-rw-r-----   1 lnpgw      lnpgw        14368 Sep 21 23:59 GlobalPlatform.properties.20220729
+-rw-r-----   1 lnpgw      lnpgw        14368 Sep 21 23:59 BKP_BFR_TPORT_20220918_GlobalPlatform.properties
+-rw-r-----   1 lnpgw      lnpgw          413 Sep 21 23:59 SGGNSIORPRD_5.ior
+-rw-r-----   1 lnpgw      lnpgw          413 Sep 21 23:59 SGGNSIORPRD_4.ior
+-rw-r-----   1 lnpgw      lnpgw          413 Sep 21 23:59 SGGNSIORPRD_3.ior
+-rw-r-----   1 lnpgw      lnpgw          122 Sep 21 23:59 lnp.desc
+-rw-r-----   1 lnpgw      lnpgw          723 Sep 21 23:59 odbc.ini
+-rw-r-----   1 lnpgw      lnpgw          186 Sep 21 23:59 dbaccess.profile
+-rw-r-----   1 lnpgw      lnpgw        10114 Sep 21 23:59 lauto
+-rw-r-----   1 lnpgw      lnpgw         1609 Sep 21 23:59 lnpgwPlatform.profile
+-rw-r-----   1 lnpgw      lnpgw          413 Sep 21 23:59 SGGNSIORPRD_1.ior
+-rw-r-----   1 lnpgw      lnpgw          413 Sep 21 23:59 SGGNSIORPRD_2.ior
+-rwxr-x---   1 lnpgw      lnpgw        14233 Sep 21 23:59 temp.properties
+jht005cc:/bto/appl/LNPGW/config/DR_with_Prod_configs/DR.jht005cc cd ../..
+jht005cc:/bto/appl/LNPGW/config lnpgwstart
+Is an LNPGW/LAUTO/LNPTA disaster recovery in progress?  [YES/NO]
+yes
+ORBIX_STATUS=down
+2024-09-22 00:00:39 CDT Start orbix
+Setting environment for domain lnp_e2a
+Setting environment for domain lnp_e2a
+Orbix services logging to: /bto/appl/LNPGW/lnp_e2a/var/lnp_e2a/logs
+Starting iona_services.config_rep.jht005cc
+Starting iona_services.management
+Starting iona_services.locator.jht005cc
+Starting iona_services.node_daemon.jht005cc
+Starting iona_services.naming.jht005cc
+Starting iona_services.basic_log.jht005cc
+Finished.
+2024-09-22 00:01:00 CDT Run lnpbasestart
+LNPGW 0003 Ready to start the lnpgw application.
+LNPGW 0000 - lnpbasetart.44.0
+LNPGW 0001 Executing lnpgw start script on Sun Sep 22 00:01:01 CDT 2024.
+cp: cannot access /bto/appl/LNPGW/config/fac_chk/GlobalPlatform_FC.properties.jht005cc: No such file or directory
+Setting environment for domain lnp_e2a
+LNPGW 0008 Executing the /bto/appl/LNPGW/lnp_e2a/etc/bin/lnp_e2a_env .
+LNPGW 0008 Executing the /bto/appl/LNPGW/etc/lnpgwPlatform.profile .
+/bto/appl/LNPGW/etc/lnpbasestart[4]: LNPGW_CFG: This variable is read only.
+LNPGW 0008 Executing the /bto/appl/LNPGW/etc/lnptools .
+/bto/appl/LNPGW/etc/lnpbasestart[4]: LNPGW_CFG: This variable is read only.
+LNPGW 0012 The Informix server process is running.
+LNPGW 0028 The consrv process has been started.
+LNPGW 0028 The lsm process has been started.
+LNPGW 0028 The SplitMonitor process has been started.
+Verifying that RSSSERVER CORBA has been removed...
+LNPGW 0028 The rssquerysrv process has been started.
+LNPGW 0028 The rssquerysrv process has been started.
+LNPGW 0028 The rssquerysrv process has been started.
+LNPGW 0028 The rssquerysrv process has been started.
+LNPGW 0028 The rssquerysrv process has been started.
+LNPGW 0028 The rssquerysrv process has been started.
+LNPGW 0028 The rssquerysrv process has been started.
+LNPGW 0028 The rssquerysrv process has been started.
+LNPGW 0028 The lnpToolsSrv process has been started.
+LNPGW 0098 The lnpgw lock file was removed.
+LNPGW 0099 The lnpgw application is ready on Sun Sep 22 00:01:27 CDT 2024.
+2024-09-22 00:01:27 CDT Run lnpsogstart in background
+2024-09-22 00:01:27 CDT Run lnpsvstart in background
+LNPGW 0003 Ready to start the lnpgw application.
+2024-09-22 00:01:27 CDT lnpgwstart done
+jht005cc:/bto/appl/LNPGW/config LNPGW 0003 Ready to start the lnpgw application.
+LNPGW 0000 - lnpsogstart.44.0
+LNPGW 0000 - lnpsvstart.44.0
+LNPGW 0001 Executing lnpgw start script on Sun Sep 22 00:01:27 CDT 2024.
+LNPGW 0001 Executing lnpgw start script on Sun Sep 22 00:01:27 CDT 2024.
+Setting environment for domain lnp_e2a
+LNPGW 0008 Executing the /bto/appl/LNPGW/lnp_e2a/etc/bin/lnp_e2a_env .
+Setting environment for domain lnp_e2a
+LNPGW 0008 Executing the /bto/appl/LNPGW/lnp_e2a/etc/bin/lnp_e2a_env .
+LNPGW 0008 Executing the /bto/appl/LNPGW/etc/lnpgwPlatform.profile .
+LNPGW 0008 Executing the /bto/appl/LNPGW/etc/lnpgwPlatform.profile .
+LNPGW 0008 Executing the /bto/appl/LNPGW/etc/profile.lnpgw .
+LNPGW 0008 Executing the /bto/appl/LNPGW/etc/profile.lnpgw .
+LNPGW 0008 Executing the /bto/appl/lautomgr/etc/lauto .
+LNPGW 0008 Executing the /bto/appl/LNPGW/etc/lnptools .
+LNPGW 0008 Executing the /bto/appl/lautomgr/etc/lauto .
+jht005cc
+defined(@array) is deprecated at /bto/appl/lautosog/etc/registerSogServers.pl line 233.
+        (Maybe you should just omit the defined()?)
+"my" variable $Command masks earlier declaration in same scope at /bto/appl/lautosog/etc/registerSogServers.pl line 646.
+registerSogServers: Starting ....
+registerSogServers: number of worlds not specified, using LAUTOTHREADCOUNT environment variable
+registerSogServers: Number of worlds = 8
+registerSogServers: Starting LautoWorld 1
+registerSogServers: File open successful
+registerSogServers: SourceLine = export LAUTOMGR_LOG_DIR=lautomgr/log, DirName = lautomgr/log/Number1
+registerSogServers: marking directory for creation: lautomgr/log/Number1
+registerSogServers: marking directory export  . LAUTOMGR_LOG_DIR
+registerSogServers: SourceLine = export LAUTOSOG_LOG_DIR=lautosog/log, DirName = lautosog/log/Number1
+registerSogServers: marking directory for creation: lautosog/log/Number1
+registerSogServers: marking directory export  . LAUTOSOG_LOG_DIR
+prod server
+
+registerSogServers: Done writing file ...
+registerSogServers: RegisterServers ...begin
+Sending output to nohup.out
+registerSogServers: Node Daemon is iona_services.node_daemon.jht005cc
+registerSogServers: itadmin process list | grep '^Number1OssmSrv$'
+Soa Manager WS is up and Running!
+
+registerSogServers: Number1OssmSrv already registered..
+registerSogServers: itadmin process list | grep '^Number1SogSrv$'
+registerSogServers: Number1SogSrv already registered..
+registerSogServers: itadmin process list | grep '^Number1ValidSrv$'
+LNPGW 0028 The SoaManagerWS process has been started.
+registerSogServers: Number1ValidSrv already registered..
+registerSogServers: StartServers ...begin
+registerSogServers: ps -ef | grep '^Number1OssmSrv$'
+registerSogServers: Starting Number1OssmSrv: itadmin process start Number1OssmSrv
+registerSogServers: ps -ef | grep '^Number1SogSrv$'
+registerSogServers: Starting Number1SogSrv: itadmin process start Number1SogSrv
+registerSogServers: ps -ef | grep '^Number1ValidSrv$'
+registerSogServers: Starting Number1ValidSrv: itadmin process start Number1ValidSrv
+registerSogServers: Starting LautoWorld 2
+registerSogServers: File open successful
+registerSogServers: SourceLine = export LAUTOMGR_LOG_DIR=lautomgr/log, DirName = lautomgr/log/Number2
+registerSogServers: marking directory for creation: lautomgr/log/Number2
+registerSogServers: marking directory export  . LAUTOMGR_LOG_DIR
+registerSogServers: SourceLine = export LAUTOSOG_LOG_DIR=lautosog/log, DirName = lautosog/log/Number2
+registerSogServers: marking directory for creation: lautosog/log/Number2
+registerSogServers: marking directory export  . LAUTOSOG_LOG_DIR
+registerSogServers: Done writing file ...
+registerSogServers: RegisterServers ...begin
+registerSogServers: Node Daemon is iona_services.node_daemon.jht005cc
+registerSogServers: itadmin process list | grep '^Number2OssmSrv$'
+registerSogServers: Number2OssmSrv already registered..
+registerSogServers: itadmin process list | grep '^Number2SogSrv$'
+registerSogServers: Number2SogSrv already registered..
+registerSogServers: itadmin process list | grep '^Number2ValidSrv$'
+registerSogServers: Number2ValidSrv already registered..
+registerSogServers: StartServers ...begin
+registerSogServers: ps -ef | grep '^Number2OssmSrv$'
+registerSogServers: Starting Number2OssmSrv: itadmin process start Number2OssmSrv
+registerSogServers: ps -ef | grep '^Number2SogSrv$'
+registerSogServers: Starting Number2SogSrv: itadmin process start Number2SogSrv
+registerSogServers: ps -ef | grep '^Number2ValidSrv$'
+registerSogServers: Starting Number2ValidSrv: itadmin process start Number2ValidSrv
+registerSogServers: Starting LautoWorld 3
+registerSogServers: File open successful
+registerSogServers: SourceLine = export LAUTOMGR_LOG_DIR=lautomgr/log, DirName = lautomgr/log/Number3
+registerSogServers: marking directory for creation: lautomgr/log/Number3
+registerSogServers: marking directory export  . LAUTOMGR_LOG_DIR
+registerSogServers: SourceLine = export LAUTOSOG_LOG_DIR=lautosog/log, DirName = lautosog/log/Number3
+registerSogServers: marking directory for creation: lautosog/log/Number3
+registerSogServers: marking directory export  . LAUTOSOG_LOG_DIR
+registerSogServers: Done writing file ...
+registerSogServers: RegisterServers ...begin
+LNPGW 0028 The soamanager process has been started.
+LNPGW 0028 The socsproc process has been started.
+registerSogServers: Node Daemon is iona_services.node_daemon.jht005cc
+registerSogServers: itadmin process list | grep '^Number3OssmSrv$'
+LNPGW 0028 The socsproc process has been started.
+registerSogServers: Number3OssmSrv already registered..
+registerSogServers: itadmin process list | grep '^Number3SogSrv$'
+registerSogServers: Number3SogSrv already registered..
+registerSogServers: itadmin process list | grep '^Number3ValidSrv$'
+LNPGW 0028 The SVCreator process has been started.
+Java Version /opt/app/java/jdk/jdk180
+Java Path /opt/app/java/jdk/jdk180/jre/bin:/dbase/informix/csdk_32/bin:/opt/app/iona/orbix63/asp/6.3/bin:/bto/appl/LNPGW/lnp_e2a/etc/bin:/opt/app/iona/orbix63/asp/6.3/bin:/bto/appl/LNPGW/lnp_e2a/etc/bin:/home/lnpgw/lnpgw/bin:/dbase/informix/csdk_32/bin:/opt/app/iona/orbix63/asp/6.3/bin:/bto/appl/LNPGW/lnp_e2a/etc/bin:/sbin:/bin:/usr/sbin:/usr/bin:/usr/bin:/usr/localcw/sbin:/usr/localcw/bin:/usr/local/bin:/usr/contrib/bin/X11:/usr/contrib/bin:/usr/ccs/bin:/usr/bin/X11:/opt/wbem/sbin:/opt/wbem/bin:/opt/ssh/bin:/opt/resmon/bin:/opt/perf/bin:/opt/parmgr/bin:/opt/nettladm/bin:/opt/ignite/bin:/opt/graphics/common/bin:/opt/fcms/bin:/opt/hpvm/bin:/opt/gvsd/bin:/usr/contrib/kwdb/bin:/bto/appl/lautomgr/utils:/bto/appl/LNPGW/etc:/dbase/informix/csdk_32:/dbase/informix/csdk_32/bin:/dbase/informix/csdk_32/lib:/dbase/informix/csdk_32/lib/cli:/home/lnpgw/lnpgw/bin:/opt/langtools/bin/:/bto/appl/LnpAppSupp/bin/:/dbase/informix/1150FC9.HPUX1131/bin:/bto/appl/LNPGW/bin:/bto/appl/LNPGW/utils:/opt/app/ndm/cdunix/ndm/bin:/usr/sbin:sbin:/opt/perl/bin:/opt/app/java/jdk/jdk180/bin:/bto/appl/LNPGW/appsuppt/bin:/bto/appl/LNPGW/curl/pdag/bin:/opt/app/aft/aftswmcli/bin:/bto/appl/LnpAppSupp/bin/:/dbase/informix/1150FC9.HPUX1131/bin:/bto/appl/LNPGW/bin:/bto/appl/LNPGW/utils:/opt/app/iona/orbix63/asp/6.3/bin
+Setting environment for domain lnp_e2a
+Creating lock file
+You're an OK guy.
+
+jht005cc
+Sun Sep 22 00:02:05 CDT 2024: Starting tport-0.0.1-SNAPSHOT...
+LNPGW 0078 The tport-0.0.1-SNAPSHOT.jar process has been started.
+Tport jar has been started
+*lsms* is already down.
+mv: /bto/appl/LNPGW/log/20240922.lsms: cannot access: No such file or directory
+lsms started OK
+*FileHandler* is already down.
+mv: /bto/appl/LNPGW/log/20240922.lsmsFileHandler: cannot access: No such file or directory
+lsmsFileHandler started OK
+registerSogServers: Number3ValidSrv already registered..
+registerSogServers: StartServers ...begin
+registerSogServers: ps -ef | grep '^Number3OssmSrv$'
+registerSogServers: Starting Number3OssmSrv: itadmin process start Number3OssmSrv
+Sun Sep 22 00:02:10 CDT 2024 Done
+2024-09-22 00:02:10 CDT Run InboundServer/service/startup.sh
+2024-09-22 00:02:10 CDT InboundServer/service/startup.sh done
+registerSogServers: ps -ef | grep '^Number3SogSrv$'
+registerSogServers: Starting Number3SogSrv: itadmin process start Number3SogSrv
+registerSogServers: ps -ef | grep '^Number3ValidSrv$'
+registerSogServers: Starting Number3ValidSrv: itadmin process start Number3ValidSrv
+LNPGW 0028 The InboundServer process has been started.
+LNPGW 0098 The lnpgw lock file was removed.
+LNPGW 0099 The lnpgw application is ready on Sun Sep 22 00:02:13 CDT 2024.
+registerSogServers: Starting LautoWorld 4
+registerSogServers: File open successful
+registerSogServers: SourceLine = export LAUTOMGR_LOG_DIR=lautomgr/log, DirName = lautomgr/log/Number4
+registerSogServers: marking directory for creation: lautomgr/log/Number4
+registerSogServers: marking directory export  . LAUTOMGR_LOG_DIR
+registerSogServers: SourceLine = export LAUTOSOG_LOG_DIR=lautosog/log, DirName = lautosog/log/Number4
+registerSogServers: marking directory for creation: lautosog/log/Number4
+registerSogServers: marking directory export  . LAUTOSOG_LOG_DIR
+registerSogServers: Done writing file ...
+registerSogServers: RegisterServers ...begin
+registerSogServers: Node Daemon is iona_services.node_daemon.jht005cc
+registerSogServers: itadmin process list | grep '^Number4OssmSrv$'
+registerSogServers: Number4OssmSrv already registered..
+registerSogServers: itadmin process list | grep '^Number4SogSrv$'
+registerSogServers: Number4SogSrv already registered..
+registerSogServers: itadmin process list | grep '^Number4ValidSrv$'
+registerSogServers: Number4ValidSrv already registered..
+registerSogServers: StartServers ...begin
+registerSogServers: ps -ef | grep '^Number4OssmSrv$'
+registerSogServers: Starting Number4OssmSrv: itadmin process start Number4OssmSrv
+registerSogServers: ps -ef | grep '^Number4SogSrv$'
+registerSogServers: Starting Number4SogSrv: itadmin process start Number4SogSrv
+registerSogServers: ps -ef | grep '^Number4ValidSrv$'
+registerSogServers: Starting Number4ValidSrv: itadmin process start Number4ValidSrv
+registerSogServers: Starting LautoWorld 5
+registerSogServers: File open successful
+registerSogServers: SourceLine = export LAUTOMGR_LOG_DIR=lautomgr/log, DirName = lautomgr/log/Number5
+registerSogServers: marking directory for creation: lautomgr/log/Number5
+registerSogServers: marking directory export  . LAUTOMGR_LOG_DIR
+registerSogServers: SourceLine = export LAUTOSOG_LOG_DIR=lautosog/log, DirName = lautosog/log/Number5
+registerSogServers: marking directory for creation: lautosog/log/Number5
+registerSogServers: marking directory export  . LAUTOSOG_LOG_DIR
+registerSogServers: Done writing file ...
+registerSogServers: RegisterServers ...begin
+registerSogServers: Node Daemon is iona_services.node_daemon.jht005cc
+registerSogServers: itadmin process list | grep '^Number5OssmSrv$'
+registerSogServers: Number5OssmSrv already registered..
+registerSogServers: itadmin process list | grep '^Number5SogSrv$'
+registerSogServers: Number5SogSrv already registered..
+registerSogServers: itadmin process list | grep '^Number5ValidSrv$'
+registerSogServers: Number5ValidSrv already registered..
+registerSogServers: StartServers ...begin
+registerSogServers: ps -ef | grep '^Number5OssmSrv$'
+registerSogServers: Starting Number5OssmSrv: itadmin process start Number5OssmSrv
+registerSogServers: ps -ef | grep '^Number5SogSrv$'
+registerSogServers: Starting Number5SogSrv: itadmin process start Number5SogSrv
+registerSogServers: ps -ef | grep '^Number5ValidSrv$'
+registerSogServers: Starting Number5ValidSrv: itadmin process start Number5ValidSrv
+registerSogServers: Starting LautoWorld 6
+registerSogServers: File open successful
+registerSogServers: SourceLine = export LAUTOMGR_LOG_DIR=lautomgr/log, DirName = lautomgr/log/Number6
+registerSogServers: marking directory for creation: lautomgr/log/Number6
+registerSogServers: marking directory export  . LAUTOMGR_LOG_DIR
+registerSogServers: SourceLine = export LAUTOSOG_LOG_DIR=lautosog/log, DirName = lautosog/log/Number6
+registerSogServers: marking directory for creation: lautosog/log/Number6
+registerSogServers: marking directory export  . LAUTOSOG_LOG_DIR
+registerSogServers: Done writing file ...
+registerSogServers: RegisterServers ...begin
+registerSogServers: Node Daemon is iona_services.node_daemon.jht005cc
+registerSogServers: itadmin process list | grep '^Number6OssmSrv$'
+registerSogServers: Number6OssmSrv already registered..
+registerSogServers: itadmin process list | grep '^Number6SogSrv$'
+registerSogServers: Number6SogSrv already registered..
+registerSogServers: itadmin process list | grep '^Number6ValidSrv$'
+registerSogServers: Number6ValidSrv already registered..
+registerSogServers: StartServers ...begin
+registerSogServers: ps -ef | grep '^Number6OssmSrv$'
+registerSogServers: Starting Number6OssmSrv: itadmin process start Number6OssmSrv
+registerSogServers: ps -ef | grep '^Number6SogSrv$'
+registerSogServers: Starting Number6SogSrv: itadmin process start Number6SogSrv
+registerSogServers: ps -ef | grep '^Number6ValidSrv$'
+registerSogServers: Starting Number6ValidSrv: itadmin process start Number6ValidSrv
+registerSogServers: Starting LautoWorld 7
+registerSogServers: File open successful
+registerSogServers: SourceLine = export LAUTOMGR_LOG_DIR=lautomgr/log, DirName = lautomgr/log/Number7
+registerSogServers: marking directory for creation: lautomgr/log/Number7
+registerSogServers: marking directory export  . LAUTOMGR_LOG_DIR
+registerSogServers: SourceLine = export LAUTOSOG_LOG_DIR=lautosog/log, DirName = lautosog/log/Number7
+registerSogServers: marking directory for creation: lautosog/log/Number7
+registerSogServers: marking directory export  . LAUTOSOG_LOG_DIR
+registerSogServers: Done writing file ...
+registerSogServers: RegisterServers ...begin
+registerSogServers: Node Daemon is iona_services.node_daemon.jht005cc
+registerSogServers: itadmin process list | grep '^Number7OssmSrv$'
+registerSogServers: Number7OssmSrv already registered..
+registerSogServers: itadmin process list | grep '^Number7SogSrv$'
+registerSogServers: Number7SogSrv already registered..
+registerSogServers: itadmin process list | grep '^Number7ValidSrv$'
+registerSogServers: Number7ValidSrv already registered..
+registerSogServers: StartServers ...begin
+registerSogServers: ps -ef | grep '^Number7OssmSrv$'
+registerSogServers: Starting Number7OssmSrv: itadmin process start Number7OssmSrv
+registerSogServers: ps -ef | grep '^Number7SogSrv$'
+registerSogServers: Starting Number7SogSrv: itadmin process start Number7SogSrv
+registerSogServers: ps -ef | grep '^Number7ValidSrv$'
+registerSogServers: Starting Number7ValidSrv: itadmin process start Number7ValidSrv
+registerSogServers: Starting LautoWorld 8
+registerSogServers: File open successful
+registerSogServers: SourceLine = export LAUTOMGR_LOG_DIR=lautomgr/log, DirName = lautomgr/log/Number8
+registerSogServers: marking directory for creation: lautomgr/log/Number8
+registerSogServers: marking directory export  . LAUTOMGR_LOG_DIR
+registerSogServers: SourceLine = export LAUTOSOG_LOG_DIR=lautosog/log, DirName = lautosog/log/Number8
+registerSogServers: marking directory for creation: lautosog/log/Number8
+registerSogServers: marking directory export  . LAUTOSOG_LOG_DIR
+registerSogServers: Done writing file ...
+registerSogServers: RegisterServers ...begin
+registerSogServers: Node Daemon is iona_services.node_daemon.jht005cc
+registerSogServers: itadmin process list | grep '^Number8OssmSrv$'
+registerSogServers: Number8OssmSrv already registered..
+registerSogServers: itadmin process list | grep '^Number8SogSrv$'
+registerSogServers: Number8SogSrv already registered..
+registerSogServers: itadmin process list | grep '^Number8ValidSrv$'
+registerSogServers: Number8ValidSrv already registered..
+registerSogServers: StartServers ...begin
+registerSogServers: ps -ef | grep '^Number8OssmSrv$'
+registerSogServers: Starting Number8OssmSrv: itadmin process start Number8OssmSrv
+registerSogServers: ps -ef | grep '^Number8SogSrv$'
+registerSogServers: Starting Number8SogSrv: itadmin process start Number8SogSrv
+registerSogServers: ps -ef | grep '^Number8ValidSrv$'
+registerSogServers: Starting Number8ValidSrv: itadmin process start Number8ValidSrv
+LAUTOSOGSTART 0023 The LAUTOSOG registration is ready on Sun Sep 22 00:03:03 CDT 2024.
+registerSogServers.pl Done...
+
+Waiting for xmlcvt process to start.
+LNPGW 0034 The xmlcvt process has been started.
+Waiting for lsrNotifyE6Srv process to start.
+LNPGW 0034 The lsrNotifyE6Srv process has been started.
+LNPGW 0041 registerLautomgr.pl has write permissions for /bto/appl/LNPGW/log/20240922.lnpsogstart file.
+calling registerLautomgr.pl
+defined(@array) is deprecated at /bto/appl/lautomgr/etc/registerLautomgr.pl line 230.
+        (Maybe you should just omit the defined()?)
+registerLautomgr: number of worlds not specified, using LAUTOTHREADCOUNT environment variable
+registerLautomgr: Number of lauto worlds = 8
+registerLautomgr: StartLautoWorlds ...begin ..
+registerLautomgr: OutName = /bto/appl/lautomgr/etc/lauto.Number1
+registerLautomgr: File open for write success
+registerLautomgr: Done writing file ...
+registerLautomgr: RegisterServers ...begin
+registerLautomgr: Node Daemon is iona_services.node_daemon.jht005cc
+registerLautomgr: itadmin process list | grep '^Number1LautoMgr$'
+registerLautomgr: Number1LautoMgr already registered..
+registerLautomgr: StartServers ...begin
+registerLautomgr: ps -ef | grep '^Number1LautoMgr$'
+registerLautomgr: Starting Number1LautoMgr: itadmin process start Number1LautoMgr
+registerLautomgr: OutName = /bto/appl/lautomgr/etc/lauto.Number2
+registerLautomgr: File open for write success
+registerLautomgr: Done writing file ...
+registerLautomgr: RegisterServers ...begin
+registerLautomgr: Node Daemon is iona_services.node_daemon.jht005cc
+registerLautomgr: itadmin process list | grep '^Number2LautoMgr$'
+registerLautomgr: Number2LautoMgr already registered..
+registerLautomgr: StartServers ...begin
+registerLautomgr: ps -ef | grep '^Number2LautoMgr$'
+registerLautomgr: Starting Number2LautoMgr: itadmin process start Number2LautoMgr
+registerLautomgr: OutName = /bto/appl/lautomgr/etc/lauto.Number3
+registerLautomgr: File open for write success
+registerLautomgr: Done writing file ...
+registerLautomgr: RegisterServers ...begin
+registerLautomgr: Node Daemon is iona_services.node_daemon.jht005cc
+registerLautomgr: itadmin process list | grep '^Number3LautoMgr$'
+registerLautomgr: Number3LautoMgr already registered..
+registerLautomgr: StartServers ...begin
+registerLautomgr: ps -ef | grep '^Number3LautoMgr$'
+registerLautomgr: Starting Number3LautoMgr: itadmin process start Number3LautoMgr
+registerLautomgr: OutName = /bto/appl/lautomgr/etc/lauto.Number4
+registerLautomgr: File open for write success
+registerLautomgr: Done writing file ...
+registerLautomgr: RegisterServers ...begin
+registerLautomgr: Node Daemon is iona_services.node_daemon.jht005cc
+registerLautomgr: itadmin process list | grep '^Number4LautoMgr$'
+registerLautomgr: Number4LautoMgr already registered..
+registerLautomgr: StartServers ...begin
+registerLautomgr: ps -ef | grep '^Number4LautoMgr$'
+registerLautomgr: Starting Number4LautoMgr: itadmin process start Number4LautoMgr
+registerLautomgr: OutName = /bto/appl/lautomgr/etc/lauto.Number5
+registerLautomgr: File open for write success
+registerLautomgr: Done writing file ...
+registerLautomgr: RegisterServers ...begin
+registerLautomgr: Node Daemon is iona_services.node_daemon.jht005cc
+registerLautomgr: itadmin process list | grep '^Number5LautoMgr$'
+registerLautomgr: Number5LautoMgr already registered..
+registerLautomgr: StartServers ...begin
+registerLautomgr: ps -ef | grep '^Number5LautoMgr$'
+registerLautomgr: Starting Number5LautoMgr: itadmin process start Number5LautoMgr
+registerLautomgr: OutName = /bto/appl/lautomgr/etc/lauto.Number6
+registerLautomgr: File open for write success
+registerLautomgr: Done writing file ...
+registerLautomgr: RegisterServers ...begin
+registerLautomgr: Node Daemon is iona_services.node_daemon.jht005cc
+registerLautomgr: itadmin process list | grep '^Number6LautoMgr$'
+registerLautomgr: Number6LautoMgr already registered..
+registerLautomgr: StartServers ...begin
+registerLautomgr: ps -ef | grep '^Number6LautoMgr$'
+registerLautomgr: Starting Number6LautoMgr: itadmin process start Number6LautoMgr
+registerLautomgr: OutName = /bto/appl/lautomgr/etc/lauto.Number7
+registerLautomgr: File open for write success
+registerLautomgr: Done writing file ...
+registerLautomgr: RegisterServers ...begin
+registerLautomgr: Node Daemon is iona_services.node_daemon.jht005cc
+registerLautomgr: itadmin process list | grep '^Number7LautoMgr$'
+registerLautomgr: Number7LautoMgr already registered..
+registerLautomgr: StartServers ...begin
+registerLautomgr: ps -ef | grep '^Number7LautoMgr$'
+registerLautomgr: Starting Number7LautoMgr: itadmin process start Number7LautoMgr
+registerLautomgr: OutName = /bto/appl/lautomgr/etc/lauto.Number8
+registerLautomgr: File open for write success
+registerLautomgr: Done writing file ...
+registerLautomgr: RegisterServers ...begin
+registerLautomgr: Node Daemon is iona_services.node_daemon.jht005cc
+registerLautomgr: itadmin process list | grep '^Number8LautoMgr$'
+registerLautomgr: Number8LautoMgr already registered..
+registerLautomgr: StartServers ...begin
+registerLautomgr: ps -ef | grep '^Number8LautoMgr$'
+registerLautomgr: Starting Number8LautoMgr: itadmin process start Number8LautoMgr
+registerLautomgr.pl executed successfully.
+registerLautomgr.pl Done....
+
+LNPGW 0028 The RponSrv process has been started.
+LNPGW 0028 The svsyncer process has been started.
+LNPGW 0028 The lsrE6_1 process has been started.
+LNPGW 0028 The lsrE6_2 process has been started.
+LAUTOSOGSTART2 0006 The sosa process has been started.
+LAUTOSOGSTART2 0008 6 SOCollector processes have been started.
+LNPGW 0028 The lsrNotifyE6Srv_FC process has been started.
+Sun Sep 22 00:04:38 CDT 2024: Starting CVoIP...
+java version "1.8.0.12-hp-ux"
+Java(TM) SE Runtime Environment (build 1.8.0.12-hp-ux-b1)
+Java HotSpot(TM) Server VM (build 25.12-b1, mixed mode)
+Sun Sep 22 00:04:54 CDT 2024: The CVoIP process has started.
+LNPGW 0028 The CVoIP process has been started.
+LNPGW 0098 The lnpgw lock file was removed.
+LNPGW 0099 The lnpgw application is ready on Sun Sep 22 00:04:54 CDT 2024.
+
+jht005cc:/bto/appl/LNPGW/config ckp
+OK: 1            /usr/sbin/syslogd
+OK: 1            /opt/app/ndm/cdunix/ndm/bin/cdpmgr
+OK: 1            /opt/app/ndm/cdunix/ndm/bin/cdstatm
+OK: 1            /opt/app/iona/orbix63/asp/6.3/bin/itmanagement
+OK: 1            /opt/app/iona/orbix63/asp/6.3/bin/itbasic_log
+OK: 1            /opt/app/iona/orbix63/asp/6.3/bin/itlocator
+OK: 1            /opt/app/iona/orbix63/asp/6.3/bin/itnaming
+OK: 1            /opt/app/iona/orbix63/asp/6.3/bin/itconfig_rep
+OK: 1            /opt/app/iona/orbix63/asp/6.3/bin/itnode_daemon
+OK: 1            /bto/appl/LNPGW/bin/consrv
+OK: 1            /bto/appl/LNPGW/bin/lsm
+NOT OK: 0 of 1   /bto/appl/LNPGW/bin/SplitMonitor
+OK: 1            /bto/appl/LNPGW/bin/utilsSrv
+OK: 1            /bto/appl/lnptools/bin/lnpToolsSrv
+OK: 8            /bto/appl/LNPGW/bin/rssquerysrv
+OK: 8            /bto/appl/lautosog/bin/validSrv
+OK: 8            /bto/appl/lautosog/bin/ossmSrv
+OK: 8            /bto/appl/lautosog/bin/sogSrv
+OK: 6            /bto/appl/lautosog/bin/SOCollector
+OK: 1            /bto/appl/lautosog/bin/sosa
+OK: 8            /bto/appl/lautomgr/bin/lautoMgr
+OK: 1            /bto/appl/lautomgr/bin/LautoLoadBal
+OK: 2            /bto/appl/LNPGW/bin/lsrE6
+OK: 1            /bto/appl/LNPGW/bin/lsrNotifyE6Srv
+OK: 1            /bto/appl/LNPGW/bin/svsyncer
+OK: 1            /bto/appl/lautosog/bin/RponSrv
+OK: 1            /bto/appl/LNPGW/bin/idlxmlcvt
+OK: 1            /bto/appl/LNPGW/bin/lsrNotifyE6Srv_FC
+OK: 1            /bto/appl/LNPGW/bin/SVCreator
+OK: 1            /bto/appl/LNPGW/bin/soamanager
+OK: 1            /bto/appl/LNPGW/SoaManagerWS/lib/SoaManagerWS.jar
+OK: 2            /bto/appl/LNPGW/bin/socsproc
+OK: 1            /bto/appl/LNPGW/bin/FileHandler
+OK: 1            /bto/appl/LNPGW/bin/lsms
+NOT OK: 0 of 1   /bto/appl/LNPGW/Tport/lib/tport-0.0.1-SNAPSHOT.jar
+OK: 1            java -Xrs -Xmx1024m -Xms256m -Djava.ext.dirs=/bto/appl/LNPGW/CVoipGwServer
+OK: 1            /bto/appl/LNPGW/InboundServer/lib/InboundServer.jar
+Return Status=2 SplitMonitor tport-0.0.1-SNAPSHOT.jar
+jht005cc:/bto/appl/LNPGW/config etc
+jht005cc:/bto/appl/LNPGW/etc ls -lrt | grep SplitMonitor
+-rwxr-xr-x   1 lnpgw      lnpgw         1085 Oct 20  2021 start_SplitMonitor
+jht005cc:/bto/appl/LNPGW/etc ./start_SplitMonitor
+LNPGW 0028 The SplitMonitor process has been started.
+jht005cc:/bto/appl/LNPGW/etc ckp
+OK: 1            /usr/sbin/syslogd
+OK: 1            /opt/app/ndm/cdunix/ndm/bin/cdpmgr
+OK: 1            /opt/app/ndm/cdunix/ndm/bin/cdstatm
+OK: 1            /opt/app/iona/orbix63/asp/6.3/bin/itmanagement
+OK: 1            /opt/app/iona/orbix63/asp/6.3/bin/itbasic_log
+OK: 1            /opt/app/iona/orbix63/asp/6.3/bin/itlocator
+OK: 1            /opt/app/iona/orbix63/asp/6.3/bin/itnaming
+OK: 1            /opt/app/iona/orbix63/asp/6.3/bin/itconfig_rep
+OK: 1            /opt/app/iona/orbix63/asp/6.3/bin/itnode_daemon
+OK: 1            /bto/appl/LNPGW/bin/consrv
+OK: 1            /bto/appl/LNPGW/bin/lsm
+OK: 1            /bto/appl/LNPGW/bin/SplitMonitor
+OK: 1            /bto/appl/LNPGW/bin/utilsSrv
+OK: 1            /bto/appl/lnptools/bin/lnpToolsSrv
+OK: 8            /bto/appl/LNPGW/bin/rssquerysrv
+OK: 8            /bto/appl/lautosog/bin/validSrv
+OK: 8            /bto/appl/lautosog/bin/ossmSrv
+OK: 8            /bto/appl/lautosog/bin/sogSrv
+OK: 6            /bto/appl/lautosog/bin/SOCollector
+OK: 1            /bto/appl/lautosog/bin/sosa
+OK: 8            /bto/appl/lautomgr/bin/lautoMgr
+OK: 1            /bto/appl/lautomgr/bin/LautoLoadBal
+OK: 2            /bto/appl/LNPGW/bin/lsrE6
+OK: 1            /bto/appl/LNPGW/bin/lsrNotifyE6Srv
+OK: 1            /bto/appl/LNPGW/bin/svsyncer
+OK: 1            /bto/appl/lautosog/bin/RponSrv
+OK: 1            /bto/appl/LNPGW/bin/idlxmlcvt
+OK: 1            /bto/appl/LNPGW/bin/lsrNotifyE6Srv_FC
+OK: 1            /bto/appl/LNPGW/bin/SVCreator
+OK: 1            /bto/appl/LNPGW/bin/soamanager
+OK: 1            /bto/appl/LNPGW/SoaManagerWS/lib/SoaManagerWS.jar
+OK: 2            /bto/appl/LNPGW/bin/socsproc
+OK: 1            /bto/appl/LNPGW/bin/FileHandler
+OK: 1            /bto/appl/LNPGW/bin/lsms
+NOT OK: 0 of 1   /bto/appl/LNPGW/Tport/lib/tport-0.0.1-SNAPSHOT.jar
+OK: 1            java -Xrs -Xmx1024m -Xms256m -Djava.ext.dirs=/bto/appl/LNPGW/CVoipGwServer
+OK: 1            /bto/appl/LNPGW/InboundServer/lib/InboundServer.jar
+Return Status=1 tport-0.0.1-SNAPSHOT.jar
+jht005cc:/bto/appl/LNPGW/etc ck_mq
+Check LNPA...
+Check SOCollector LNPA MQ #1...
+2024-09-22 00:06:22 CDT
+MQSERVER=ENCJCSN1CHLNP/TCP/jmqhdp00.jadc.att.com
+QMGR=ENC_JCSN1   QNAME=SOCS.LNPA.N.ST1
+/home/lnpgw/lnpgw/bin/browsequeue SOCS.LNPA.N.ST1 ENC_JCSN1 SOCS.LNPA.N.ST1 noconvert
+
+ MQOPEN - 'SOCS.LNPA.N.ST1'
+
+
+
+ No more messages
+ MQCLOSE
+ MQDISC
+++++++++++++++++++++
+
+Check SOCollector LNPA MQ #2...
+2024-09-22 00:06:22 CDT
+MQSERVER=ENCJCSN2CHLNP/TCP/jstz0297.jadc.att.com
+QMGR=ENC_JCSN2   QNAME=SOCS.LNPA.N.ST1
+/home/lnpgw/lnpgw/bin/browsequeue SOCS.LNPA.N.ST1 ENC_JCSN2 SOCS.LNPA.N.ST1 noconvert
+
+ MQOPEN - 'SOCS.LNPA.N.ST1'
+
+
+
+ No more messages
+ MQCLOSE
+ MQDISC
+++++++++++++++++++++
+
+Check LNPC...
+Check socsproc LNPC MQ #1...
+2024-09-22 00:06:23 CDT
+MQSERVER=ENCJCSN1CHLNP/TCP/jmqhdp00.jadc.att.com
+QMGR=ENC_JCSN1   QNAME=SOCS.LNPC.N.ST1
+/home/lnpgw/lnpgw/bin/browsequeue SOCS.LNPC.N.ST1 ENC_JCSN1 SOCS.LNPC.N.ST1 noconvert
+
+ MQOPEN - 'SOCS.LNPC.N.ST1'
+
+
+
+ No more messages
+ MQCLOSE
+ MQDISC
+++++++++++++++++++++
+
+Check socsproc LNPC MQ #2...
+2024-09-22 00:06:23 CDT
+MQSERVER=ENCJCSN2CHLNP/TCP/jstz0297.jadc.att.com
+QMGR=ENC_JCSN2   QNAME=SOCS.LNPC.N.ST1
+/home/lnpgw/lnpgw/bin/browsequeue SOCS.LNPC.N.ST1 ENC_JCSN2 SOCS.LNPC.N.ST1 noconvert
+
+ MQOPEN - 'SOCS.LNPC.N.ST1'
+
+
+
+ No more messages
+ MQCLOSE
+ MQDISC
+++++++++++++++++++++
+
+Check LASR Inbound Queues...
+2024-09-22 00:06:24 CDT
+MQSERVER=ENCJCSN1CHLASR/TCP/jmqhdp00.jadc.att.com
+QMGR=ENC_JCSN1   QNAME=LASR.LNP.N.ST1
+/home/lnpgw/lnpgw/bin/browsequeue LASR.LNP.N.ST1 ENC_JCSN1 LASR.LNP.N.ST1 noconvert
+
+ MQOPEN - 'LASR.LNP.N.ST1'
+
+
+
+ No more messages
+ MQCLOSE
+ MQDISC
+++++++++++++++++++++
+
+2024-09-22 00:06:24 CDT
+MQSERVER=ENCJCSN2CHLASR/TCP/jstz0297.jadc.att.com
+QMGR=ENC_JCSN2   QNAME=LASR.LNP.N.ST1
+/home/lnpgw/lnpgw/bin/browsequeue LASR.LNP.N.ST1 ENC_JCSN2 LASR.LNP.N.ST1 noconvert
+
+ MQOPEN - 'LASR.LNP.N.ST1'
+
+
+
+ No more messages
+ MQCLOSE
+ MQDISC
+++++++++++++++++++++
+
+
+2024-09-22 00:06:24 Cleaning up. Please wait... Done.
+
+logout
+Check LNP CVIOP Inbound Q...
+2024-09-22 00:06:24 CDT
+MQSERVER=ENCJCSN1CHLNP/TCP/jmqhdp00.jadc.att.com
+QMGR=ENC_JCSN1   QNAME=RMBISQL.LNP.N.ST1
+/home/lnpgw/lnpgw/bin/browsequeue RMBISQL.LNP.N.ST1 ENC_JCSN1 RMBISQL.LNP.N.ST1 noconvert
+
+ MQOPEN - 'RMBISQL.LNP.N.ST1'
+
+
+
+ No more messages
+ MQCLOSE
+ MQDISC
+++++++++++++++++++++
+
+Check LNP CVIOP Outbound Q...
+2024-09-22 00:06:25 CDT
+MQSERVER=ENCJCSN1CHLNP/TCP/jmqhdp00.jadc.att.com
+QMGR=ENC_JCSN1   QNAME=LNPQL.RMBIS.N.ST1
+/home/lnpgw/lnpgw/bin/browsequeue LNPQL.RMBIS.N.ST1 ENC_JCSN1 LNPQL.RMBIS.N.ST1 noconvert
+
+ MQOPEN - 'LNPQL.RMBIS.N.ST1'
+
+
+Write message to file: LNPQL.RMBIS.N.ST11
+
+
+
+Write message to file: LNPQL.RMBIS.N.ST12
+
+
+
+Write message to file: LNPQL.RMBIS.N.ST13
+
+
+
+Write message to file: LNPQL.RMBIS.N.ST14
+
+
+
+Write message to file: LNPQL.RMBIS.N.ST15
+
+
+
+Write message to file: LNPQL.RMBIS.N.ST16
+
+
+
+Write message to file: LNPQL.RMBIS.N.ST17
+
+
+
+Write message to file: LNPQL.RMBIS.N.ST18
+
+
+
+Write message to file: LNPQL.RMBIS.N.ST19
+
+
+
+Write message to file: LNPQL.RMBIS.N.ST110
+
+
+
+Write message to file: LNPQL.RMBIS.N.ST111
+
+
+
+Write message to file: LNPQL.RMBIS.N.ST112
+
+
+
+Write message to file: LNPQL.RMBIS.N.ST113
+
+
+
+Write message to file: LNPQL.RMBIS.N.ST114
+
+
+
+Write message to file: LNPQL.RMBIS.N.ST115
+
+
+
+Write message to file: LNPQL.RMBIS.N.ST116
+
+
+
+Write message to file: LNPQL.RMBIS.N.ST117
+
+
+
+Write message to file: LNPQL.RMBIS.N.ST118
+
+
+
+Write message to file: LNPQL.RMBIS.N.ST119
+
+
+
+Write message to file: LNPQL.RMBIS.N.ST120
+
+
+
+Write message to file: LNPQL.RMBIS.N.ST121
+
+
+
+Write message to file: LNPQL.RMBIS.N.ST122
+
+
+
+Write message to file: LNPQL.RMBIS.N.ST123
+
+
+
+Write message to file: LNPQL.RMBIS.N.ST124
+
+
+
+Write message to file: LNPQL.RMBIS.N.ST125
+
+
+
+Write message to file: LNPQL.RMBIS.N.ST126
+
+
+
+Write message to file: LNPQL.RMBIS.N.ST127
+
+
+
+Write message to file: LNPQL.RMBIS.N.ST128
+
+
+
+Write message to file: LNPQL.RMBIS.N.ST129
+
+
+
+Write message to file: LNPQL.RMBIS.N.ST130
+
+
+
+Write message to file: LNPQL.RMBIS.N.ST131
+
+
+
+Write message to file: LNPQL.RMBIS.N.ST132
+
+
+
+Write message to file: LNPQL.RMBIS.N.ST133
+
+
+
+Write message to file: LNPQL.RMBIS.N.ST134
+
+
+
+Write message to file: LNPQL.RMBIS.N.ST135
+
+
+
+Write message to file: LNPQL.RMBIS.N.ST136
+
+
+
+Write message to file: LNPQL.RMBIS.N.ST137
+
+
+
+Write message to file: LNPQL.RMBIS.N.ST138
+
+
+
+Write message to file: LNPQL.RMBIS.N.ST139
+
+
+
+Write message to file: LNPQL.RMBIS.N.ST140
+
+
+
+Write message to file: LNPQL.RMBIS.N.ST141
+
+
+
+Write message to file: LNPQL.RMBIS.N.ST142
+
+
+
+Write message to file: LNPQL.RMBIS.N.ST143
+
+
+
+Write message to file: LNPQL.RMBIS.N.ST144
+
+
+
+Write message to file: LNPQL.RMBIS.N.ST145
+
+
+
+Write message to file: LNPQL.RMBIS.N.ST146
+
+
+
+Write message to file: LNPQL.RMBIS.N.ST147
+
+
+
+Write message to file: LNPQL.RMBIS.N.ST148
+
+
+
+Write message to file: LNPQL.RMBIS.N.ST149
+
+
+
+Write message to file: LNPQL.RMBIS.N.ST150
+
+
+
+Write message to file: LNPQL.RMBIS.N.ST151
+
+
+
+Write message to file: LNPQL.RMBIS.N.ST152
+
+
+
+Write message to file: LNPQL.RMBIS.N.ST153
+
+
+
+Write message to file: LNPQL.RMBIS.N.ST154
+
+
+
+Write message to file: LNPQL.RMBIS.N.ST155
+
+
+
+Write message to file: LNPQL.RMBIS.N.ST156
+
+
+
+
+ No more messages
+ MQCLOSE
+ MQDISC
+++++++++++++++++++++
+
+
+2024-09-22 00:06:25 Cleaning up. Please wait... Done.
+
+logout
+logout
+jht005cc:/bto/appl/LNPGW/etc ^C
+jht005cc:/bto/appl/LNPGW/etc cd ..
+jht005cc:/bto/appl/LNPGW logs
+nologin: logs: cannot execute
+jht005cc:/bto/appl/LNPGW cd logs
+nologin: logs:  not found
+jht005cc:/bto/appl/LNPGW ls -lrt
+total 107528
+drwxr-xr-x   3 root       root            96 Oct 25  2012 keys
+drwxr-xr-x   3 lnpgw      lnpgw           96 Oct 25  2012 edifiles
+drwxr-xr-x   3 lnpgw      lnpgw           96 Oct 25  2012 PSIMS
+drwxr-xr-x   2 lnpgw      lnpgw           96 Apr 16  2013 navfiles
+drwxr-xr-x   4 lnpgw      lnpgw           96 Apr 16  2013 sqr
+drwxr-xr-x   2 lnpgw      lnpgw           96 Apr 22  2013 CRIS
+drwxr-xr-x   4 lnpgw      lnpgw           96 May  7  2013 lnp_e2a_backup
+-rwxr-xr-x   1 lnpgw      lnpgw         2831 May  7  2013 lnp_e2a_dd.xml.20130507
+drwxr-xr-x   3 lnpgw      lnpgw           96 Nov 19  2013 appsuppt
+drwxr-xr-x   3 lnpgw      lnpgw           96 Nov 19  2013 tnreclaimfiles
+drwxr-xr-x   2 lnpgw      lnpgw         1024 Dec  5  2013 ior
+drwxr-xr-x   6 lnpgw      lnpgw           96 Nov 12  2016 InboundServer.20161112
+-rwxr-xr-x   1 lnpgw      lnpgw         7019 Nov 12  2016 licenses.txt.20161112
+-rw-r-----   1 lnpgw      lnpgw       501760 Nov 12  2016 ib.tar
+drwxr-x---   6 lnpgw      lnpgw           96 Jul 28  2017 Inbound20170729.bkp
+drwxr-x---   4 lnpgw      lnpgw         1024 Nov 10  2017 config_bkup_20171111
+drwxr-x---   3 lnpgw      lnpgw         3072 Nov 10  2017 etc_bkup_20171111
+drwxr-x---   4 lnpgw      lnpgw         1024 Nov 28  2017 config_bkp_20171129
+drwxr-xr-x   3 lnpgw      lnpgw         1024 Mar 16  2018 march_2018_pre_release_bkp
+drwxr-x---   4 lnpgw      lnpgw         1024 Mar 24  2018 config_bkp_20180325
+drwxrwxr-x   4 lnpgw      lnpgw         1024 Apr 27  2018 config_bkp_20180427
+drwxrwxr-x   3 lnpgw      lnpgw         3072 Apr 27  2018 etc_bkp_20180427
+-r--r--r--   1 lnpgw      lnpgw         7019 May 18  2018 licenses.txt
+-rwxr-xr-x   1 lnpgw      lnpgw         2939 May 18  2018 lnp_e2a_dd.xml
+drwxr-xr-x   4 lnpgw      lnpgw           96 May 18  2018 lnp_e2a_bkp_20180519
+drwxr-xr-x   4 lnpgw      lnpgw           96 May 18  2018 lnp_e2a
+drwxr-x---   4 lnpgw      lnpgw         1024 Jul 20  2018 config_07202018
+drwxr-x---   3 lnpgw      lnpgw         3072 Jul 20  2018 etc_07202018
+drwxr-x---   5 lnpgw      lnpgw         1024 Aug 11  2018 config_20180811_bkp
+drwxr-x---   3 lnpgw      lnpgw         3072 Aug 11  2018 etc_20180811_bkp
+drwxr-xr-x   4 lnpgw      lnpgw        54272 Sep 13  2018 reports
+drwxr-x---   5 lnpgw      lnpgw         1024 Nov 15  2019 config_20191115_bkp
+drwxr-xr-x   7 lnpgw      lnpgw         1024 Dec 11  2020 files
+drwxr-xr-x   2 lnpgw      lnpgw         1024 Dec 11  2020 libs
+drwxr-xr-x   2 lnpgw      lnpgw         1024 Dec 11  2020 utils
+drwxr-x---  10 lnpgw      lnpgw         1024 Jan 12  2022 Java_Modules
+drwxr-x---   6 lnpgw      lnpgw           96 Jan 15  2022 AttIntCancel_backup_20220115
+drwxr-x---   6 lnpgw      lnpgw           96 Jan 15  2022 CVoipGwServer_backup_20220115
+drwxr-x---   6 lnpgw      lnpgw           96 Jan 15  2022 InboundServer_backup_20220115
+drwxr-x---   4 lnpgw      lnpgw           96 Jan 15  2022 LnpgwLibs_backup_20220115
+drwxr-x---   6 lnpgw      lnpgw           96 Jan 15  2022 PsocTypeB_backup_20220115
+drwxr-x---   6 lnpgw      lnpgw           96 Jan 15  2022 Reporter_backup_20220115
+drwxr-x---   6 lnpgw      lnpgw           96 Jan 15  2022 SoaManagerWS_backup_20220115
+drwxr-x---   6 lnpgw      lnpgw           96 Jan 15  2022 jDbUtilLnpgw_backup_20220115
+-rwxr-x---   1 lnpgw      lnpgw      9144320 Jan 15  2022 Java_Modules.tar.xz
+drwxr-x---   6 lnpgw      lnpgw           96 Jan 15  2022 CVoipGwServer
+drwxr-x---   6 lnpgw      lnpgw           96 Jan 15  2022 AttIntCancel
+drwxr-x---   6 lnpgw      lnpgw           96 Jan 15  2022 jDbUtilLnpgw
+drwxr-x---   6 lnpgw      lnpgw           96 Jan 15  2022 Reporter
+drwxr-xr-x   6 lnpgw      lnpgw           96 Jan 15  2022 InboundServer
+drwxr-x---   4 lnpgw      lnpgw           96 Jan 15  2022 LnpgwLibs
+drwxr-x---   6 lnpgw      lnpgw           96 Jan 15  2022 SoaManagerWS
+drwxr-x---   3 lnpgw      lnpgw           96 Apr  8  2022 2204bkp
+-rwxr-x---   1 lnpgw      lnpgw      45271040 Apr  8  2022 InboundServer.tar.gz
+drwxr-xr-x   4 lnpgw      lnpgw           96 Aug 30  2022 curl
+drwxr-xr-x   7 lnpgw      lnpgw         1024 Feb  5  2023 Tport
+drwxr-xr-x   2 lnpgw      lnpgw         1024 Mar  4  2023 bin
+drwxr-x---   6 lnpgw      lnpgw         1024 Sep  3  2023 PsocTypeB
+drwxr-xr-x   8 lnpgw      lnpgw         2048 Apr 27 01:03 dbtools
+drwxr-xr-x   8 lnpgw      lnpgw         1024 Sep 22 00:01 config
+drwxr-xr-x   2 lnpgw      lnpgw         1024 Sep 22 00:01 tmp
+drwxr-xr-x   3 lnpgw      lnpgw         4096 Sep 22 00:04 etc
+drwxr-xr-x  22 lnpgw      lnpgw        25600 Sep 22 00:04 log
+jht005cc:/bto/appl/LNPGW cd log
+jht005cc:/bto/appl/LNPGW/log ls -lrt | grep lsrE6
+-rw-r--r--   1 lnpgw      lnpgw        24238 Dec  5  2013 20131205.lsrE6_1
+-rw-r--r--   1 lnpgw      lnpgw        26720 Dec  5  2013 20131205.lsrE6_2
+-rw-r--r--   1 lnpgw      lnpgw         1776 Jul 28  2014 20140728.lsrE6_1
+-rw-r--r--   1 lnpgw      lnpgw         1776 Jul 28  2014 20140728.lsrE6_2
+-rw-r--r--   1 lnpgw      lnpgw         1692 Jul 23  2015 20150723.lsrE6_2
+-rw-r--r--   1 lnpgw      lnpgw         1692 Jul 23  2015 20150723.lsrE6_1
+-rw-r--r--   1 lnpgw      lnpgw         1692 Jul 26  2016 20160726.lsrE6_1
+-rw-r--r--   1 lnpgw      lnpgw         2960 Jul 26  2016 20160726.lsrE6_2
+-rw-r--r--   1 lnpgw      lnpgw         5016 Sep 13  2018 20180913.lsrE6_2
+-rw-r--r--   1 lnpgw      lnpgw         5016 Sep 13  2018 20180913.lsrE6_1
+-rw-r--r--   1 lnpgw      lnpgw         1692 Sep 26  2021 20210926.lsrE6_1
+-rw-r--r--   1 lnpgw      lnpgw         4006 Sep 26  2021 20210926.lsrE6_2
+-rw-r--r--   1 lnpgw      lnpgw         1692 Sep 18  2022 20220918.lsrE6_1
+-rw-r--r--   1 lnpgw      lnpgw         1692 Sep 18  2022 20220918.lsrE6_2
+-rw-r--r--   1 lnpgw      lnpgw         1692 Sep  3  2023 20230903.lsrE6_1
+-rw-r--r--   1 lnpgw      lnpgw         1692 Sep  3  2023 20230903.lsrE6_2
+-rw-r--r--   1 lnpgw      lnpgw         1692 Sep 22 00:04 20240922.lsrE6_2
+-rw-r--r--   1 lnpgw      lnpgw         1692 Sep 22 00:04 20240922.lsrE6_1
+jht005cc:/bto/appl/LNPGW/log view 20240922.lsrE6_1
+Terminal too wide
+:
+Interrupt
+:quit
+Unknown command character '^['
+:q
+cta: Not an editor command
+:!
+Unknown command character '^['
+:q!
+jht005cc:/bto/appl/LNPGW/log cat 20240922.lsrE6_1
+2024/09/22-00:04:29  readDescriptorFile /bto/appl/LNPGW/config/lnp.desc done.
+2024/09/22-00:04:29  Property URL: file://localhost/bto/appl/LNPGW/config/Global.properties
+2024/09/22-00:04:29  Property URL: file://localhost/bto/appl/LNPGW/config/GlobalPlatform.properties
+2024/09/22-00:04:29  PropertiesAbstract::Initialize done.
+Initializing the ORB
+Connection to lsm successful.
+Connection to lsm successful.
+**** Could not attach to the shared memory for some reason in lsmSetup with no Parms!!
+Invalid argument
+Connection to lsrNotifye6 successful.
+ INFORMIXDBNAME = dblnp
+This is a valid connection
+Inside the sysdr() while loop
+transactions  enabled
+database opened
+LAUTO_HOSTNAME =
+LAUTO_MARKER_SERVER =
+Connection to LautoLoadBal successful.
+Connection to LNPToolsSrv successful.
+ CHECK_CAVE_PROJECT:N
+create object validated
+CHECK_CAVE_PROJECT in lnpgw.cfg was set to:N
+************************************** QUEUE NUMBER PASSED = 1 ********************************************
+************************************* MQDataReader::MQDataReader ******************************************.
++++++++++++QUEUE+++++++++++++++++ENCJCSN1CHLASR/TCP/jmqhdp00.jadc.att.com|ENC_JCSN1|LASR.LNP.N.ST1
+**  QUEUES LIST - ENCJCSN1CHLASR/TCP/jmqhdp00.jadc.att.com|ENC_JCSN1|LASR.LNP.N.ST1 ENCJCSN2CHLASR/TCP/jstz0297.jadc.att.com|ENC_JCSN2|LASR.LNP.N.ST1 **
+************************************* QUEUES IN QUEUE LIST : 2 *******************************
+Reconnect time for Queue Manager in Single Threaded Mode is : 2 minutes.
+server waiting ...
+****** MQDataReader 1 Started Unit Of Work from QUEUE - ENCJCSN1CHLASR/TCP/jmqhdp00.jadc.att.com|ENC_JCSN1|LASR.LNP.N.ST1 at Sun Sep 22 00:04:31 2024 ******
+jht005cc:/bto/appl/LNPGW/log grep jht004bb_s5_tcp *
+20131205.consrv:2013/12/05-07:53:34  INFORMIXSERVER=>jht004bb_s5_tcp
+20131205.consrv:2013/12/05-07:53:34  SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20131205.consrv:2013/12/05-10:44:13  INFORMIXSERVER=>jht004bb_s5_tcp
+20131205.lsm:<      SYS><Thu Dec  5 07:53:39 2013><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20131205.lsm:<      SYS><Thu Dec  5 07:53:39 2013><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20131205.lsm:<      SYS><Thu Dec  5 07:53:39 2013><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20131205.lsm:<      SYS><Thu Dec  5 07:53:40 2013><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20131205.lsm:<      SYS><Thu Dec  5 07:53:40 2013><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20131205.lsm:<      SYS><Thu Dec  5 07:53:40 2013><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20131205.lsm:<      SYS><Thu Dec  5 07:53:41 2013><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20131205.lsm:<      SYS><Thu Dec  5 07:53:42 2013><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20131205.lsm:<      SYS><Thu Dec  5 07:53:42 2013><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20131205.lsm:<      SYS><Thu Dec  5 07:53:43 2013><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20131205.lsm:<      SYS><Thu Dec  5 07:53:44 2013><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20131205.lsm:<      SYS><Thu Dec  5 07:53:44 2013><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20131205.lsm:<      SYS><Thu Dec  5 07:53:45 2013><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20131205.lsm:<      SYS><Thu Dec  5 07:53:45 2013><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20131205.lsm:<      SYS><Thu Dec  5 07:53:46 2013><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20131205.lsm:<      SYS><Thu Dec  5 07:53:46 2013><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20131205.lsm:<      SYS><Thu Dec  5 07:54:03 2013><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20131205.lsm:<      SYS><Thu Dec  5 07:54:03 2013><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20131205.lsm:<      SYS><Thu Dec  5 07:54:04 2013><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20131205.lsm:<      SYS><Thu Dec  5 07:54:04 2013><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20131205.lsm:<      SYS><Thu Dec  5 07:54:30 2013><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20131205.lsm:<      SYS><Thu Dec  5 07:54:30 2013><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20131205.lsm:<      SYS><Thu Dec  5 07:54:55 2013><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20131205.lsm:<      SYS><Thu Dec  5 07:54:55 2013><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20131205.lsm:<      SYS><Thu Dec  5 07:56:10 2013><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20131205.lsm:<      SYS><Thu Dec  5 07:56:10 2013><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20131205.lsm:<      SYS><Thu Dec  5 07:56:10 2013><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20131205.lsm:<      SYS><Thu Dec  5 07:56:10 2013><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20131205.lsm:<      SYS><Thu Dec  5 08:06:22 2013><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20131205.lsm:<      SYS><Thu Dec  5 08:06:22 2013><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20131205.lsm:<      SYS><Thu Dec  5 09:00:18 2013><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20131205.lsm:<      SYS><Thu Dec  5 09:00:18 2013><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20131205.lsm:<      SYS><Thu Dec  5 10:19:30 2013><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20131205.lsm:<      SYS><Thu Dec  5 10:23:37 2013><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20131205.lsm:<      SYS><Thu Dec  5 10:44:16 2013><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20131205.lsm:<      SYS><Thu Dec  5 10:44:18 2013><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20131205.lsm:<      SYS><Thu Dec  5 10:44:19 2013><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20131205.lsm:<      SYS><Thu Dec  5 10:44:20 2013><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20131205.lsm:<      SYS><Thu Dec  5 10:44:21 2013><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20131205.lsm:<      SYS><Thu Dec  5 10:44:22 2013><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20131205.lsm:<      SYS><Thu Dec  5 10:44:23 2013><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20131205.lsm:<      SYS><Thu Dec  5 10:44:24 2013><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20131205.lsm:<      SYS><Thu Dec  5 10:44:25 2013><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20131205.lsm:<      SYS><Thu Dec  5 10:44:43 2013><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20131205.lsm:<      SYS><Thu Dec  5 10:44:43 2013><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20131205.lsm:<      SYS><Thu Dec  5 10:45:05 2013><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20131205.lsm:<      SYS><Thu Dec  5 10:45:33 2013><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20131205.lsm:<      SYS><Thu Dec  5 10:46:48 2013><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20131205.lsm:<      SYS><Thu Dec  5 10:46:48 2013><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20131205.soamanager:2013/12/05-07:53:52  INFORMIXSERVER=>jht004bb_s5_tcp
+20131205.soamanager:2013/12/05-07:53:52  SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20131205.soamanager:2013/12/05-10:44:31  INFORMIXSERVER=>jht004bb_s5_tcp
+20131205.syslog:<Thu Dec  5 07:53:39 2013><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20131205.syslog:<Thu Dec  5 07:53:39 2013><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20131205.syslog:<Thu Dec  5 07:53:39 2013><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20131205.syslog:<Thu Dec  5 07:53:40 2013><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20131205.syslog:<Thu Dec  5 07:53:40 2013><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20131205.syslog:<Thu Dec  5 07:53:40 2013><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20131205.syslog:<Thu Dec  5 07:53:41 2013><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20131205.syslog:<Thu Dec  5 07:53:42 2013><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20131205.syslog:<Thu Dec  5 07:53:42 2013><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20131205.syslog:<Thu Dec  5 07:53:43 2013><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20131205.syslog:<Thu Dec  5 07:53:44 2013><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20131205.syslog:<Thu Dec  5 07:53:44 2013><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20131205.syslog:<Thu Dec  5 07:53:45 2013><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20131205.syslog:<Thu Dec  5 07:53:45 2013><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20131205.syslog:<Thu Dec  5 07:53:46 2013><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20131205.syslog:<Thu Dec  5 07:53:46 2013><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20131205.syslog:<Thu Dec  5 07:54:03 2013><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20131205.syslog:<Thu Dec  5 07:54:03 2013><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20131205.syslog:<Thu Dec  5 07:54:04 2013><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20131205.syslog:<Thu Dec  5 07:54:04 2013><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20131205.syslog:<Thu Dec  5 07:54:30 2013><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20131205.syslog:<Thu Dec  5 07:54:30 2013><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20131205.syslog:<Thu Dec  5 07:54:55 2013><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20131205.syslog:<Thu Dec  5 07:54:55 2013><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20131205.syslog:<Thu Dec  5 07:56:10 2013><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20131205.syslog:<Thu Dec  5 07:56:10 2013><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20131205.syslog:<Thu Dec  5 07:56:10 2013><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20131205.syslog:<Thu Dec  5 07:56:10 2013><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20131205.syslog:<Thu Dec  5 08:06:22 2013><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20131205.syslog:<Thu Dec  5 08:06:22 2013><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20131205.syslog:<Thu Dec  5 09:00:18 2013><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20131205.syslog:<Thu Dec  5 09:00:18 2013><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20131205.syslog:<Thu Dec  5 10:19:30 2013><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20131205.syslog:<Thu Dec  5 10:23:37 2013><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20131205.syslog:<Thu Dec  5 10:44:16 2013><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20131205.syslog:<Thu Dec  5 10:44:18 2013><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20131205.syslog:<Thu Dec  5 10:44:19 2013><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20131205.syslog:<Thu Dec  5 10:44:20 2013><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20131205.syslog:<Thu Dec  5 10:44:21 2013><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20131205.syslog:<Thu Dec  5 10:44:22 2013><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20131205.syslog:<Thu Dec  5 10:44:23 2013><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20131205.syslog:<Thu Dec  5 10:44:24 2013><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20131205.syslog:<Thu Dec  5 10:44:25 2013><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20131205.syslog:<Thu Dec  5 10:44:43 2013><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20131205.syslog:<Thu Dec  5 10:44:43 2013><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20131205.syslog:<Thu Dec  5 10:45:05 2013><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20131205.syslog:<Thu Dec  5 10:45:33 2013><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20131205.syslog:<Thu Dec  5 10:46:48 2013><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20131205.syslog:<Thu Dec  5 10:46:48 2013><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20140728.consrv:2014/07/28-09:58:07  INFORMIXSERVER=>jht004bb_s5_tcp
+20140728.consrv:2014/07/28-09:58:07  SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20140728.lsm:<      SYS><Mon Jul 28 09:58:09 2014><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20140728.lsm:<      SYS><Mon Jul 28 09:58:09 2014><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20140728.lsm:<      SYS><Mon Jul 28 09:58:12 2014><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20140728.lsm:<      SYS><Mon Jul 28 09:58:12 2014><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20140728.lsm:<      SYS><Mon Jul 28 09:58:12 2014><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20140728.lsm:<      SYS><Mon Jul 28 09:58:13 2014><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20140728.lsm:<      SYS><Mon Jul 28 09:58:13 2014><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20140728.lsm:<      SYS><Mon Jul 28 09:58:13 2014><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20140728.lsm:<      SYS><Mon Jul 28 09:58:14 2014><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20140728.lsm:<      SYS><Mon Jul 28 09:58:14 2014><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20140728.lsm:<      SYS><Mon Jul 28 09:58:15 2014><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20140728.lsm:<      SYS><Mon Jul 28 09:58:15 2014><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20140728.lsm:<      SYS><Mon Jul 28 09:58:16 2014><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20140728.lsm:<      SYS><Mon Jul 28 09:58:16 2014><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20140728.lsm:<      SYS><Mon Jul 28 09:58:18 2014><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20140728.lsm:<      SYS><Mon Jul 28 09:58:18 2014><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20140728.lsm:<      SYS><Mon Jul 28 09:58:19 2014><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20140728.lsm:<      SYS><Mon Jul 28 09:58:19 2014><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20140728.lsm:<      SYS><Mon Jul 28 09:58:25 2014><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20140728.lsm:<      SYS><Mon Jul 28 09:58:25 2014><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20140728.lsm:<      SYS><Mon Jul 28 09:58:26 2014><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20140728.lsm:<      SYS><Mon Jul 28 09:58:26 2014><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20140728.lsm:<      SYS><Mon Jul 28 09:59:25 2014><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20140728.lsm:<      SYS><Mon Jul 28 09:59:25 2014><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20140728.lsm:<      SYS><Mon Jul 28 10:00:40 2014><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20140728.lsm:<      SYS><Mon Jul 28 10:00:40 2014><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20140728.lsm:<      SYS><Mon Jul 28 10:00:41 2014><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20140728.lsm:<      SYS><Mon Jul 28 10:00:41 2014><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20140728.syslog:<Mon Jul 28 09:58:09 2014><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20140728.syslog:<Mon Jul 28 09:58:09 2014><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20140728.syslog:<Mon Jul 28 09:58:12 2014><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20140728.syslog:<Mon Jul 28 09:58:12 2014><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20140728.syslog:<Mon Jul 28 09:58:12 2014><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20140728.syslog:<Mon Jul 28 09:58:13 2014><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20140728.syslog:<Mon Jul 28 09:58:13 2014><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20140728.syslog:<Mon Jul 28 09:58:13 2014><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20140728.syslog:<Mon Jul 28 09:58:14 2014><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20140728.syslog:<Mon Jul 28 09:58:14 2014><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20140728.syslog:<Mon Jul 28 09:58:15 2014><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20140728.syslog:<Mon Jul 28 09:58:15 2014><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20140728.syslog:<Mon Jul 28 09:58:16 2014><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20140728.syslog:<Mon Jul 28 09:58:16 2014><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20140728.syslog:<Mon Jul 28 09:58:18 2014><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20140728.syslog:<Mon Jul 28 09:58:18 2014><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20140728.syslog:<Mon Jul 28 09:58:19 2014><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20140728.syslog:<Mon Jul 28 09:58:19 2014><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20140728.syslog:<Mon Jul 28 09:58:25 2014><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20140728.syslog:<Mon Jul 28 09:58:25 2014><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20140728.syslog:<Mon Jul 28 09:58:26 2014><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20140728.syslog:<Mon Jul 28 09:58:26 2014><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20140728.syslog:<Mon Jul 28 09:59:25 2014><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20140728.syslog:<Mon Jul 28 09:59:25 2014><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20140728.syslog:<Mon Jul 28 10:00:40 2014><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20140728.syslog:<Mon Jul 28 10:00:40 2014><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20140728.syslog:<Mon Jul 28 10:00:41 2014><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20140728.syslog:<Mon Jul 28 10:00:41 2014><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20150723.consrv:2015/07/23-10:42:23  INFORMIXSERVER=>jht004bb_s5_tcp
+20150723.consrv:2015/07/23-10:42:23  SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20150723.lsm:<      SYS><Thu Jul 23 10:42:25 2015><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20150723.lsm:<      SYS><Thu Jul 23 10:42:25 2015><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20150723.lsm:<      SYS><Thu Jul 23 10:42:29 2015><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20150723.lsm:<      SYS><Thu Jul 23 10:42:29 2015><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20150723.lsm:<      SYS><Thu Jul 23 10:42:29 2015><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20150723.lsm:<      SYS><Thu Jul 23 10:42:29 2015><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20150723.lsm:<      SYS><Thu Jul 23 10:42:30 2015><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20150723.lsm:<      SYS><Thu Jul 23 10:42:30 2015><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20150723.lsm:<      SYS><Thu Jul 23 10:42:31 2015><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20150723.lsm:<      SYS><Thu Jul 23 10:42:31 2015><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20150723.lsm:<      SYS><Thu Jul 23 10:42:32 2015><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20150723.lsm:<      SYS><Thu Jul 23 10:42:32 2015><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20150723.lsm:<      SYS><Thu Jul 23 10:42:33 2015><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20150723.lsm:<      SYS><Thu Jul 23 10:42:33 2015><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20150723.lsm:<      SYS><Thu Jul 23 10:42:34 2015><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20150723.lsm:<      SYS><Thu Jul 23 10:42:34 2015><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20150723.lsm:<      SYS><Thu Jul 23 10:42:35 2015><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20150723.lsm:<      SYS><Thu Jul 23 10:42:35 2015><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20150723.lsm:<      SYS><Thu Jul 23 10:42:42 2015><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20150723.lsm:<      SYS><Thu Jul 23 10:42:42 2015><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20150723.lsm:<      SYS><Thu Jul 23 10:42:43 2015><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20150723.lsm:<      SYS><Thu Jul 23 10:42:43 2015><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20150723.lsm:<      SYS><Thu Jul 23 10:43:43 2015><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20150723.lsm:<      SYS><Thu Jul 23 10:43:43 2015><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20150723.lsm:<      SYS><Thu Jul 23 10:44:58 2015><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20150723.lsm:<      SYS><Thu Jul 23 10:44:58 2015><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20150723.lsm:<      SYS><Thu Jul 23 10:44:58 2015><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20150723.lsm:<      SYS><Thu Jul 23 10:44:58 2015><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20150723.syslog:<Thu Jul 23 10:42:25 2015><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20150723.syslog:<Thu Jul 23 10:42:25 2015><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20150723.syslog:<Thu Jul 23 10:42:29 2015><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20150723.syslog:<Thu Jul 23 10:42:29 2015><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20150723.syslog:<Thu Jul 23 10:42:29 2015><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20150723.syslog:<Thu Jul 23 10:42:29 2015><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20150723.syslog:<Thu Jul 23 10:42:30 2015><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20150723.syslog:<Thu Jul 23 10:42:30 2015><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20150723.syslog:<Thu Jul 23 10:42:31 2015><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20150723.syslog:<Thu Jul 23 10:42:31 2015><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20150723.syslog:<Thu Jul 23 10:42:32 2015><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20150723.syslog:<Thu Jul 23 10:42:32 2015><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20150723.syslog:<Thu Jul 23 10:42:33 2015><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20150723.syslog:<Thu Jul 23 10:42:33 2015><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20150723.syslog:<Thu Jul 23 10:42:34 2015><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20150723.syslog:<Thu Jul 23 10:42:34 2015><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20150723.syslog:<Thu Jul 23 10:42:35 2015><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20150723.syslog:<Thu Jul 23 10:42:35 2015><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20150723.syslog:<Thu Jul 23 10:42:42 2015><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20150723.syslog:<Thu Jul 23 10:42:42 2015><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20150723.syslog:<Thu Jul 23 10:42:43 2015><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20150723.syslog:<Thu Jul 23 10:42:43 2015><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20150723.syslog:<Thu Jul 23 10:43:43 2015><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20150723.syslog:<Thu Jul 23 10:43:43 2015><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20150723.syslog:<Thu Jul 23 10:44:58 2015><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20150723.syslog:<Thu Jul 23 10:44:58 2015><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20150723.syslog:<Thu Jul 23 10:44:58 2015><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20150723.syslog:<Thu Jul 23 10:44:58 2015><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20160726.consrv:2016/07/26-10:53:24  INFORMIXSERVER=>jht004bb_s5_tcp
+20160726.consrv:2016/07/26-10:53:24  SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20160726.lsm:<      SYS><Tue Jul 26 10:53:25 2016><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20160726.lsm:<      SYS><Tue Jul 26 10:53:25 2016><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20160726.lsm:<      SYS><Tue Jul 26 10:53:29 2016><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20160726.lsm:<      SYS><Tue Jul 26 10:53:29 2016><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20160726.lsm:<      SYS><Tue Jul 26 10:53:29 2016><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20160726.lsm:<      SYS><Tue Jul 26 10:53:29 2016><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20160726.lsm:<      SYS><Tue Jul 26 10:53:30 2016><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20160726.lsm:<      SYS><Tue Jul 26 10:53:30 2016><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20160726.lsm:<      SYS><Tue Jul 26 10:53:31 2016><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20160726.lsm:<      SYS><Tue Jul 26 10:53:31 2016><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20160726.lsm:<      SYS><Tue Jul 26 10:53:32 2016><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20160726.lsm:<      SYS><Tue Jul 26 10:53:32 2016><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20160726.lsm:<      SYS><Tue Jul 26 10:53:33 2016><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20160726.lsm:<      SYS><Tue Jul 26 10:53:33 2016><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20160726.lsm:<      SYS><Tue Jul 26 10:53:34 2016><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20160726.lsm:<      SYS><Tue Jul 26 10:53:34 2016><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20160726.lsm:<      SYS><Tue Jul 26 10:53:35 2016><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20160726.lsm:<      SYS><Tue Jul 26 10:53:35 2016><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20160726.lsm:<      SYS><Tue Jul 26 10:54:41 2016><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20160726.lsm:<      SYS><Tue Jul 26 10:54:41 2016><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20160726.lsm:<      SYS><Tue Jul 26 10:55:56 2016><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20160726.lsm:<      SYS><Tue Jul 26 10:55:56 2016><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20160726.lsm:<      SYS><Tue Jul 26 10:55:56 2016><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20160726.lsm:<      SYS><Tue Jul 26 10:55:57 2016><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20160726.lsm:<      SYS><Tue Jul 26 11:05:15 2016><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20160726.lsm:<      SYS><Tue Jul 26 11:05:15 2016><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20160726.lsm:<      SYS><Tue Jul 26 11:05:16 2016><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20160726.lsm:<      SYS><Tue Jul 26 11:05:16 2016><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20160726.soamanager:2016/07/26-10:53:41  INFORMIXSERVER=>jht004bb_s5_tcp
+20160726.soamanager:2016/07/26-10:53:41  SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20160726.syslog:<Tue Jul 26 10:53:25 2016><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20160726.syslog:<Tue Jul 26 10:53:25 2016><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20160726.syslog:<Tue Jul 26 10:53:29 2016><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20160726.syslog:<Tue Jul 26 10:53:29 2016><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20160726.syslog:<Tue Jul 26 10:53:29 2016><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20160726.syslog:<Tue Jul 26 10:53:29 2016><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20160726.syslog:<Tue Jul 26 10:53:30 2016><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20160726.syslog:<Tue Jul 26 10:53:30 2016><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20160726.syslog:<Tue Jul 26 10:53:31 2016><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20160726.syslog:<Tue Jul 26 10:53:31 2016><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20160726.syslog:<Tue Jul 26 10:53:32 2016><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20160726.syslog:<Tue Jul 26 10:53:32 2016><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20160726.syslog:<Tue Jul 26 10:53:33 2016><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20160726.syslog:<Tue Jul 26 10:53:33 2016><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20160726.syslog:<Tue Jul 26 10:53:34 2016><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20160726.syslog:<Tue Jul 26 10:53:34 2016><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20160726.syslog:<Tue Jul 26 10:53:35 2016><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20160726.syslog:<Tue Jul 26 10:53:35 2016><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20160726.syslog:<Tue Jul 26 10:54:41 2016><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20160726.syslog:<Tue Jul 26 10:54:41 2016><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20160726.syslog:<Tue Jul 26 10:55:56 2016><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20160726.syslog:<Tue Jul 26 10:55:56 2016><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20160726.syslog:<Tue Jul 26 10:55:56 2016><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20160726.syslog:<Tue Jul 26 10:55:57 2016><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20160726.syslog:<Tue Jul 26 11:05:15 2016><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20160726.syslog:<Tue Jul 26 11:05:15 2016><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20160726.syslog:<Tue Jul 26 11:05:16 2016><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20160726.syslog:<Tue Jul 26 11:05:16 2016><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20210926.consrv:2021/09/26-00:48:50  INFORMIXSERVER=>jht004bb_s5_tcp
+20210926.consrv:2021/09/26-00:48:50  SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20210926.lsm:<      SYS><Sun Sep 26 00:48:52 2021><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20210926.lsm:<      SYS><Sun Sep 26 00:48:52 2021><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20210926.lsm:<      SYS><Sun Sep 26 00:48:55 2021><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20210926.lsm:<      SYS><Sun Sep 26 00:48:55 2021><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20210926.lsm:<      SYS><Sun Sep 26 00:48:56 2021><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20210926.lsm:<      SYS><Sun Sep 26 00:48:56 2021><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20210926.lsm:<      SYS><Sun Sep 26 00:48:57 2021><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20210926.lsm:<      SYS><Sun Sep 26 00:48:57 2021><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20210926.lsm:<      SYS><Sun Sep 26 00:48:58 2021><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20210926.lsm:<      SYS><Sun Sep 26 00:48:58 2021><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20210926.lsm:<      SYS><Sun Sep 26 00:48:59 2021><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20210926.lsm:<      SYS><Sun Sep 26 00:48:59 2021><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20210926.lsm:<      SYS><Sun Sep 26 00:49:00 2021><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20210926.lsm:<      SYS><Sun Sep 26 00:49:00 2021><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20210926.lsm:<      SYS><Sun Sep 26 00:49:01 2021><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20210926.lsm:<      SYS><Sun Sep 26 00:49:02 2021><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20210926.lsm:<      SYS><Sun Sep 26 00:49:03 2021><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20210926.lsm:<      SYS><Sun Sep 26 00:49:03 2021><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20210926.lsm:<      SYS><Sun Sep 26 00:49:40 2021><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20210926.lsm:<      SYS><Sun Sep 26 00:49:40 2021><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20210926.lsm:<      SYS><Sun Sep 26 00:49:40 2021><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20210926.lsm:<      SYS><Sun Sep 26 00:49:40 2021><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20210926.lsm:<      SYS><Sun Sep 26 00:50:03 2021><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20210926.lsm:<      SYS><Sun Sep 26 00:50:03 2021><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20210926.lsm:<      SYS><Sun Sep 26 00:50:52 2021><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20210926.lsm:<      SYS><Sun Sep 26 00:50:52 2021><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20210926.lsm:<      SYS><Sun Sep 26 00:52:11 2021><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20210926.lsm:<      SYS><Sun Sep 26 00:52:12 2021><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20210926.lsm:<      SYS><Sun Sep 26 00:52:12 2021><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20210926.lsm:<      SYS><Sun Sep 26 00:52:12 2021><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20210926.soamanager:2021/09/26-00:49:29  INFORMIXSERVER=>jht004bb_s5_tcp
+20210926.soamanager:2021/09/26-00:49:29  SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20210926.syslog:<Sun Sep 26 00:48:52 2021><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20210926.syslog:<Sun Sep 26 00:48:52 2021><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20210926.syslog:<Sun Sep 26 00:48:55 2021><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20210926.syslog:<Sun Sep 26 00:48:55 2021><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20210926.syslog:<Sun Sep 26 00:48:56 2021><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20210926.syslog:<Sun Sep 26 00:48:56 2021><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20210926.syslog:<Sun Sep 26 00:48:57 2021><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20210926.syslog:<Sun Sep 26 00:48:57 2021><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20210926.syslog:<Sun Sep 26 00:48:58 2021><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20210926.syslog:<Sun Sep 26 00:48:58 2021><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20210926.syslog:<Sun Sep 26 00:48:59 2021><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20210926.syslog:<Sun Sep 26 00:48:59 2021><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20210926.syslog:<Sun Sep 26 00:49:00 2021><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20210926.syslog:<Sun Sep 26 00:49:00 2021><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20210926.syslog:<Sun Sep 26 00:49:01 2021><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20210926.syslog:<Sun Sep 26 00:49:02 2021><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20210926.syslog:<Sun Sep 26 00:49:03 2021><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20210926.syslog:<Sun Sep 26 00:49:03 2021><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20210926.syslog:<Sun Sep 26 00:49:40 2021><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20210926.syslog:<Sun Sep 26 00:49:40 2021><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20210926.syslog:<Sun Sep 26 00:49:40 2021><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20210926.syslog:<Sun Sep 26 00:49:40 2021><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20210926.syslog:<Sun Sep 26 00:50:03 2021><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20210926.syslog:<Sun Sep 26 00:50:03 2021><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20210926.syslog:<Sun Sep 26 00:50:52 2021><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20210926.syslog:<Sun Sep 26 00:50:52 2021><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20210926.syslog:<Sun Sep 26 00:52:11 2021><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20210926.syslog:<Sun Sep 26 00:52:12 2021><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20210926.syslog:<Sun Sep 26 00:52:12 2021><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20210926.syslog:<Sun Sep 26 00:52:12 2021><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20220918.consrv:2022/09/18-03:55:03  INFORMIXSERVER=>jht004bb_s5_tcp
+20220918.consrv:2022/09/18-03:55:03  SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20220918.lnpsvstart:dbUrl=jdbc:informix-sqli://jhtc0011.jadc.att.com:1545/dblnp:informixserver=jht004bb_s5_tcp;user=lnpgw;password=hat5675$
+20220918.lsm:<      SYS><Sun Sep 18 03:55:05 2022><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20220918.lsm:<      SYS><Sun Sep 18 03:55:05 2022><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20220918.lsm:<      SYS><Sun Sep 18 03:55:07 2022><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20220918.lsm:<      SYS><Sun Sep 18 03:55:08 2022><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20220918.lsm:<      SYS><Sun Sep 18 03:55:08 2022><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20220918.lsm:<      SYS><Sun Sep 18 03:55:09 2022><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20220918.lsm:<      SYS><Sun Sep 18 03:55:09 2022><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20220918.lsm:<      SYS><Sun Sep 18 03:55:09 2022><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20220918.lsm:<      SYS><Sun Sep 18 03:55:11 2022><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20220918.lsm:<      SYS><Sun Sep 18 03:55:11 2022><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20220918.lsm:<      SYS><Sun Sep 18 03:55:12 2022><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20220918.lsm:<      SYS><Sun Sep 18 03:55:12 2022><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20220918.lsm:<      SYS><Sun Sep 18 03:55:13 2022><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20220918.lsm:<      SYS><Sun Sep 18 03:55:13 2022><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20220918.lsm:<      SYS><Sun Sep 18 03:55:14 2022><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20220918.lsm:<      SYS><Sun Sep 18 03:55:14 2022><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20220918.lsm:<      SYS><Sun Sep 18 03:55:15 2022><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20220918.lsm:<      SYS><Sun Sep 18 03:55:15 2022><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20220918.lsm:<      SYS><Sun Sep 18 03:55:51 2022><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20220918.lsm:<      SYS><Sun Sep 18 03:55:51 2022><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20220918.lsm:<      SYS><Sun Sep 18 03:55:52 2022><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20220918.lsm:<      SYS><Sun Sep 18 03:55:52 2022><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20220918.lsm:<      SYS><Sun Sep 18 03:56:44 2022><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20220918.lsm:<      SYS><Sun Sep 18 03:56:44 2022><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20220918.lsm:<      SYS><Sun Sep 18 03:58:04 2022><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20220918.lsm:<      SYS><Sun Sep 18 03:58:05 2022><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20220918.lsm:<      SYS><Sun Sep 18 03:58:11 2022><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20220918.lsm:<      SYS><Sun Sep 18 03:58:11 2022><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20220918.lsm:<      SYS><Sun Sep 18 04:24:50 2022><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20220918.lsm:<      SYS><Sun Sep 18 04:24:50 2022><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20220918.soamanager:2022/09/18-03:55:41  INFORMIXSERVER=>jht004bb_s5_tcp
+20220918.soamanager:2022/09/18-03:55:41  SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20220918.syslog:<Sun Sep 18 03:55:05 2022><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20220918.syslog:<Sun Sep 18 03:55:05 2022><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20220918.syslog:<Sun Sep 18 03:55:07 2022><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20220918.syslog:<Sun Sep 18 03:55:08 2022><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20220918.syslog:<Sun Sep 18 03:55:08 2022><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20220918.syslog:<Sun Sep 18 03:55:09 2022><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20220918.syslog:<Sun Sep 18 03:55:09 2022><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20220918.syslog:<Sun Sep 18 03:55:09 2022><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20220918.syslog:<Sun Sep 18 03:55:11 2022><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20220918.syslog:<Sun Sep 18 03:55:11 2022><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20220918.syslog:<Sun Sep 18 03:55:12 2022><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20220918.syslog:<Sun Sep 18 03:55:12 2022><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20220918.syslog:<Sun Sep 18 03:55:13 2022><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20220918.syslog:<Sun Sep 18 03:55:13 2022><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20220918.syslog:<Sun Sep 18 03:55:14 2022><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20220918.syslog:<Sun Sep 18 03:55:14 2022><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20220918.syslog:<Sun Sep 18 03:55:15 2022><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20220918.syslog:<Sun Sep 18 03:55:15 2022><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20220918.syslog:<Sun Sep 18 03:55:51 2022><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20220918.syslog:<Sun Sep 18 03:55:51 2022><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20220918.syslog:<Sun Sep 18 03:55:52 2022><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20220918.syslog:<Sun Sep 18 03:55:52 2022><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20220918.syslog:<Sun Sep 18 03:56:44 2022><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20220918.syslog:<Sun Sep 18 03:56:44 2022><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20220918.syslog:<Sun Sep 18 03:58:04 2022><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20220918.syslog:<Sun Sep 18 03:58:05 2022><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20220918.syslog:<Sun Sep 18 03:58:11 2022><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20220918.syslog:<Sun Sep 18 03:58:11 2022><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20220918.syslog:<Sun Sep 18 04:24:50 2022><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20220918.syslog:<Sun Sep 18 04:24:50 2022><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20230903.consrv:2023/09/03-00:16:57  INFORMIXSERVER=>jht004bb_s5_tcp
+20230903.consrv:2023/09/03-00:16:57  SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20230903.lsm:<      SYS><Sun Sep  3 00:17:00 2023><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20230903.lsm:<      SYS><Sun Sep  3 00:17:00 2023><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20230903.lsm:<      SYS><Sun Sep  3 00:17:02 2023><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20230903.lsm:<      SYS><Sun Sep  3 00:17:02 2023><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20230903.lsm:<      SYS><Sun Sep  3 00:17:03 2023><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20230903.lsm:<      SYS><Sun Sep  3 00:17:03 2023><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20230903.lsm:<      SYS><Sun Sep  3 00:17:04 2023><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20230903.lsm:<      SYS><Sun Sep  3 00:17:04 2023><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20230903.lsm:<      SYS><Sun Sep  3 00:17:05 2023><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20230903.lsm:<      SYS><Sun Sep  3 00:17:05 2023><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20230903.lsm:<      SYS><Sun Sep  3 00:17:06 2023><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20230903.lsm:<      SYS><Sun Sep  3 00:17:06 2023><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20230903.lsm:<      SYS><Sun Sep  3 00:17:07 2023><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20230903.lsm:<      SYS><Sun Sep  3 00:17:07 2023><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20230903.lsm:<      SYS><Sun Sep  3 00:17:08 2023><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20230903.lsm:<      SYS><Sun Sep  3 00:17:08 2023><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20230903.lsm:<      SYS><Sun Sep  3 00:17:10 2023><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20230903.lsm:<      SYS><Sun Sep  3 00:17:10 2023><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20230903.lsm:<      SYS><Sun Sep  3 00:17:46 2023><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20230903.lsm:<      SYS><Sun Sep  3 00:17:46 2023><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20230903.lsm:<      SYS><Sun Sep  3 00:17:49 2023><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20230903.lsm:<      SYS><Sun Sep  3 00:17:49 2023><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20230903.lsm:<      SYS><Sun Sep  3 00:18:01 2023><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20230903.lsm:<      SYS><Sun Sep  3 00:18:01 2023><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20230903.lsm:<      SYS><Sun Sep  3 00:19:06 2023><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20230903.lsm:<      SYS><Sun Sep  3 00:19:06 2023><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20230903.lsm:<      SYS><Sun Sep  3 00:20:36 2023><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20230903.lsm:<      SYS><Sun Sep  3 00:20:36 2023><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20230903.lsm:<      SYS><Sun Sep  3 00:20:36 2023><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20230903.lsm:<      SYS><Sun Sep  3 00:20:36 2023><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20230903.soamanager:2023/09/03-00:17:36  INFORMIXSERVER=>jht004bb_s5_tcp
+20230903.soamanager:2023/09/03-00:17:36  SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20230903.syslog:<Sun Sep  3 00:17:00 2023><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20230903.syslog:<Sun Sep  3 00:17:00 2023><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20230903.syslog:<Sun Sep  3 00:17:02 2023><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20230903.syslog:<Sun Sep  3 00:17:02 2023><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20230903.syslog:<Sun Sep  3 00:17:03 2023><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20230903.syslog:<Sun Sep  3 00:17:03 2023><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20230903.syslog:<Sun Sep  3 00:17:04 2023><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20230903.syslog:<Sun Sep  3 00:17:04 2023><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20230903.syslog:<Sun Sep  3 00:17:05 2023><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20230903.syslog:<Sun Sep  3 00:17:05 2023><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20230903.syslog:<Sun Sep  3 00:17:06 2023><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20230903.syslog:<Sun Sep  3 00:17:06 2023><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20230903.syslog:<Sun Sep  3 00:17:07 2023><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20230903.syslog:<Sun Sep  3 00:17:07 2023><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20230903.syslog:<Sun Sep  3 00:17:08 2023><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20230903.syslog:<Sun Sep  3 00:17:08 2023><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20230903.syslog:<Sun Sep  3 00:17:10 2023><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20230903.syslog:<Sun Sep  3 00:17:10 2023><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20230903.syslog:<Sun Sep  3 00:17:46 2023><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20230903.syslog:<Sun Sep  3 00:17:46 2023><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20230903.syslog:<Sun Sep  3 00:17:49 2023><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20230903.syslog:<Sun Sep  3 00:17:49 2023><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20230903.syslog:<Sun Sep  3 00:18:01 2023><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20230903.syslog:<Sun Sep  3 00:18:01 2023><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20230903.syslog:<Sun Sep  3 00:19:06 2023><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20230903.syslog:<Sun Sep  3 00:19:06 2023><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20230903.syslog:<Sun Sep  3 00:20:36 2023><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20230903.syslog:<Sun Sep  3 00:20:36 2023><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20230903.syslog:<Sun Sep  3 00:20:36 2023><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20230903.syslog:<Sun Sep  3 00:20:36 2023><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20240922.consrv:2024/09/22-00:01:07  INFORMIXSERVER=>jht004bb_s5_tcp
+20240922.consrv:2024/09/22-00:01:07  SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20240922.lsm:<      SYS><Sun Sep 22 00:01:15 2024><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20240922.lsm:<      SYS><Sun Sep 22 00:01:16 2024><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20240922.lsm:<      SYS><Sun Sep 22 00:01:16 2024><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20240922.lsm:<      SYS><Sun Sep 22 00:01:17 2024><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20240922.lsm:<      SYS><Sun Sep 22 00:01:17 2024><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20240922.lsm:<      SYS><Sun Sep 22 00:01:17 2024><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20240922.lsm:<      SYS><Sun Sep 22 00:01:18 2024><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20240922.lsm:<      SYS><Sun Sep 22 00:01:19 2024><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20240922.lsm:<      SYS><Sun Sep 22 00:01:19 2024><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20240922.lsm:<      SYS><Sun Sep 22 00:01:19 2024><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20240922.lsm:<      SYS><Sun Sep 22 00:01:20 2024><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20240922.lsm:<      SYS><Sun Sep 22 00:01:20 2024><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20240922.lsm:<      SYS><Sun Sep 22 00:01:21 2024><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20240922.lsm:<      SYS><Sun Sep 22 00:01:21 2024><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20240922.lsm:<      SYS><Sun Sep 22 00:01:21 2024><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20240922.lsm:<      SYS><Sun Sep 22 00:01:22 2024><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20240922.lsm:<      SYS><Sun Sep 22 00:02:02 2024><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20240922.lsm:<      SYS><Sun Sep 22 00:02:02 2024><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20240922.lsm:<      SYS><Sun Sep 22 00:02:03 2024><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20240922.lsm:<      SYS><Sun Sep 22 00:02:03 2024><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20240922.lsm:<      SYS><Sun Sep 22 00:02:17 2024><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20240922.lsm:<      SYS><Sun Sep 22 00:02:17 2024><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20240922.lsm:<      SYS><Sun Sep 22 00:03:09 2024><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20240922.lsm:<      SYS><Sun Sep 22 00:03:09 2024><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20240922.lsm:<      SYS><Sun Sep 22 00:04:30 2024><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20240922.lsm:<      SYS><Sun Sep 22 00:04:30 2024><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20240922.lsm:<      SYS><Sun Sep 22 00:04:30 2024><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20240922.lsm:<      SYS><Sun Sep 22 00:04:30 2024><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20240922.lsm:<      SYS><Sun Sep 22 00:06:09 2024><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+20240922.lsm:<      SYS><Sun Sep 22 00:06:09 2024><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+20240922.soamanager:2024/09/22-00:01:48  INFORMIXSERVER=>jht004bb_s5_tcp
+20240922.soamanager:2024/09/22-00:01:48  SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+current.syslog:<Sun Sep 22 00:01:15 2024><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+current.syslog:<Sun Sep 22 00:01:16 2024><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+current.syslog:<Sun Sep 22 00:01:16 2024><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+current.syslog:<Sun Sep 22 00:01:17 2024><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+current.syslog:<Sun Sep 22 00:01:17 2024><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+current.syslog:<Sun Sep 22 00:01:17 2024><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+current.syslog:<Sun Sep 22 00:01:18 2024><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+current.syslog:<Sun Sep 22 00:01:19 2024><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+current.syslog:<Sun Sep 22 00:01:19 2024><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+current.syslog:<Sun Sep 22 00:01:19 2024><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+current.syslog:<Sun Sep 22 00:01:20 2024><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+current.syslog:<Sun Sep 22 00:01:20 2024><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+current.syslog:<Sun Sep 22 00:01:21 2024><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+current.syslog:<Sun Sep 22 00:01:21 2024><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+current.syslog:<Sun Sep 22 00:01:21 2024><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+current.syslog:<Sun Sep 22 00:01:22 2024><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+current.syslog:<Sun Sep 22 00:02:02 2024><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+current.syslog:<Sun Sep 22 00:02:02 2024><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+current.syslog:<Sun Sep 22 00:02:03 2024><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+current.syslog:<Sun Sep 22 00:02:03 2024><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+current.syslog:<Sun Sep 22 00:02:17 2024><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+current.syslog:<Sun Sep 22 00:02:17 2024><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+current.syslog:<Sun Sep 22 00:03:09 2024><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+current.syslog:<Sun Sep 22 00:03:09 2024><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+current.syslog:<Sun Sep 22 00:04:30 2024><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+current.syslog:<Sun Sep 22 00:04:30 2024><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+current.syslog:<Sun Sep 22 00:04:30 2024><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+current.syslog:<Sun Sep 22 00:04:30 2024><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+current.syslog:<Sun Sep 22 00:06:09 2024><    propAbstract> INFORMIXSERVER=>jht004bb_s5_tcp
+current.syslog:<Sun Sep 22 00:06:09 2024><    propAbstract> SVSYNCERINFSRVNAME=>jht004bb_s5_tcp
+jht005cc:/bto/appl/LNPGW/log cd /bto/appl/LNPGW/lnp_e2a/etc/bin/
+jht005cc:/bto/appl/LNPGW/lnp_e2a/etc/bin
+jht005cc:/bto/appl/LNPGW/lnp_e2a/etc/bin
+jht005cc:/bto/appl/LNPGW/lnp_e2a/etc/bin lnpgwstop
+LNPGW 0100 - lnpgwstop 44.0
+LNPGW 0101 Executing /bto/appl/LNPGW/etc/lnpgwstop script on Sun Sep 22 00:14:43 CDT 2024.
+LNPGW 0103 Ready to stop the LNPGW Application.
+Setting environment for domain lnp_e2a
+LNPGW 0106 Executing the /bto/appl/LNPGW/lnp_e2a/etc/bin/lnp_e2a_env .
+LNPGW 0106 Executing the /bto/appl/LNPGW/etc/lnpgwPlatform.profile .
+LNPGW 0106 Executing the /bto/appl/LNPGW/etc/profile.lnpgw .
+LNPGW 0106 Executing the /bto/appl/LNPGW/etc/lnptools .
+LNPGW 0106 Executing the /bto/appl/lautomgr/etc/lauto .
+LNPGW 0198 The LNPGW lock file was installed.
+
+
+SoaManagerWS Process is ready to be stopped!!
+
+
+Sun Sep 22 00:14:43 CDT 2024: Waiting for SoaManagerWS process to stop...
+Sun Sep 22 00:14:48 CDT 2024: SoaManagerWS process has exited.
+LNPGW 0110 SoamanagerWS process has exited.
+Sun Sep 22 00:14:48 CDT 2024: Shutting down running InboundServer instances...
+java version "1.8.0.12-hp-ux"
+Java(TM) SE Runtime Environment (build 1.8.0.12-hp-ux-b1)
+Java HotSpot(TM) Server VM (build 25.12-b1, mixed mode)
+Sun Sep 22 00:14:48 CDT 2024: Waiting for InboundServer process to stop...
+Sun Sep 22 00:14:59 CDT 2024: The InboundServer process has been killed.
+LNPGW 0110 InboundServer process has exited.
+Sun Sep 22 00:14:59 CDT 2024: Shutting down running CVoIP instances...
+java version "1.8.0.12-hp-ux"
+Java(TM) SE Runtime Environment (build 1.8.0.12-hp-ux-b1)
+Java HotSpot(TM) Server VM (build 25.12-b1, mixed mode)
+Sun Sep 22 00:14:59 CDT 2024: Waiting for CVoIP process to stop...
+Sun Sep 22 00:15:04 CDT 2024: The CVoIP process has been killed.
+LNPGW 0110 CVoIP process has exited.
+LNPGW 0111 The sosa process has been killed.
+LNPGW 0111 The SOCollector process has been killed.
+LNPGW 0111 The LautoLoadBal process has been killed.
+LNPGW 0110 No LautoLoadBal.ksh process is running, no need to kill it.
+LNPGW 0111 The lautoMgr process has been killed.
+LNPGW 0111 The validSrv process has been killed.
+LNPGW 0111 The sogSrv process has been killed.
+LNPGW 0111 The ossmSrv process has been killed.
+LNPGW 0111 The RponSrv process has been killed.
+LNPGW 0111 The lnpToolsSrv process has been killed.
+LNPGW 0111 The lsms process has been killed.
+LNPGW 0111 The socsproc process has been killed.
+LNPGW 0111 The rssquerysrv process has been killed.
+LNPGW 0111 The soamanager process has been killed.
+LNPGW 0111 The lsm process has been killed.
+LNPGW 0111 The FileHandler process has been killed.
+LNPGW 0110 No lsrNotifySrv process is running, no need to kill it.
+LNPGW 0111 The lsrNotifyE6Srv process has been killed.
+LNPGW 0110 No lsrNotifyE6Srv_FC process is running, no need to kill it.
+LNPGW 0111 The idlxmlcvt process has been killed.
+LNPGW 0111 The lsrE6 process has been killed.
+LNPGW 0111 The SplitMonitor process has been killed.
+LNPGW 0111 The utilsSrv.ksh process has been killed.
+LNPGW 0111 The utilsSrv process has been killed.
+LNPGW 0111 The SVCreator process has been killed.
+LNPGW 0110 No SVConverter process is running, no need to kill it.
+LNPGW 0111 The svsyncer process has been killed.
+LNPGW 0111 The consrv process has been killed.
+LNPGW 0122 Removing RSSSERVER CORBA instances...
+LNPGW 0199 The LNPGW Application has stopped on Sun Sep 22 00:16:23 CDT 2024.
+jht005cc:/bto/appl/LNPGW/lnp_e2a/etc/bin stop_lnp_e2a_services
+Setting environment for domain lnp_e2a
+Stopping iona_services.basic_log.jht005cc
+Stopping iona_services.naming.jht005cc
+Stopping iona_services.node_daemon.jht005cc
+Stopping iona_services.locator.jht005cc
+Stopping iona_services.management
+Stopping iona_services.config_rep.jht005cc
+Finished.
+jht005cc:/bto/appl/LNPGW/lnp_e2a/etc/bin ckp
+OK: 1            /usr/sbin/syslogd
+OK: 1            /opt/app/ndm/cdunix/ndm/bin/cdpmgr
+OK: 1            /opt/app/ndm/cdunix/ndm/bin/cdstatm
+NOT OK: 0 of 1   /opt/app/iona/orbix63/asp/6.3/bin/itmanagement
+NOT OK: 0 of 1   /opt/app/iona/orbix63/asp/6.3/bin/itbasic_log
+NOT OK: 0 of 1   /opt/app/iona/orbix63/asp/6.3/bin/itlocator
+NOT OK: 0 of 1   /opt/app/iona/orbix63/asp/6.3/bin/itnaming
+NOT OK: 0 of 1   /opt/app/iona/orbix63/asp/6.3/bin/itconfig_rep
+NOT OK: 0 of 1   /opt/app/iona/orbix63/asp/6.3/bin/itnode_daemon
+NOT OK: 0 of 1   /bto/appl/LNPGW/bin/consrv
+NOT OK: 0 of 1   /bto/appl/LNPGW/bin/lsm
+NOT OK: 0 of 1   /bto/appl/LNPGW/bin/SplitMonitor
+NOT OK: 0 of 1   /bto/appl/LNPGW/bin/utilsSrv
+NOT OK: 0 of 1   /bto/appl/lnptools/bin/lnpToolsSrv
+NOT OK: 0 of 8   /bto/appl/LNPGW/bin/rssquerysrv
+NOT OK: 0 of 7-8         /bto/appl/lautosog/bin/validSrv
+NOT OK: 0 of 7-8         /bto/appl/lautosog/bin/ossmSrv
+NOT OK: 0 of 7-8         /bto/appl/lautosog/bin/sogSrv
+NOT OK: 0 of 6   /bto/appl/lautosog/bin/SOCollector
+NOT OK: 0 of 1   /bto/appl/lautosog/bin/sosa
+NOT OK: 0 of 7-8         /bto/appl/lautomgr/bin/lautoMgr
+NOT OK: 0 of 1   /bto/appl/lautomgr/bin/LautoLoadBal
+NOT OK: 0 of 2   /bto/appl/LNPGW/bin/lsrE6
+NOT OK: 0 of 1   /bto/appl/LNPGW/bin/lsrNotifyE6Srv
+NOT OK: 0 of 1   /bto/appl/LNPGW/bin/svsyncer
+NOT OK: 0 of 1   /bto/appl/lautosog/bin/RponSrv
+NOT OK: 0 of 1   /bto/appl/LNPGW/bin/idlxmlcvt
+NOT OK: 0 of 1   /bto/appl/LNPGW/bin/lsrNotifyE6Srv_FC
+NOT OK: 0 of 1   /bto/appl/LNPGW/bin/SVCreator
+NOT OK: 0 of 1   /bto/appl/LNPGW/bin/soamanager
+NOT OK: 0 of 1   /bto/appl/LNPGW/SoaManagerWS/lib/SoaManagerWS.jar
+NOT OK: 0 of 2-3         /bto/appl/LNPGW/bin/socsproc
+NOT OK: 0 of 1   /bto/appl/LNPGW/bin/FileHandler
+NOT OK: 0 of 1   /bto/appl/LNPGW/bin/lsms
+NOT OK: 0 of 1   /bto/appl/LNPGW/Tport/lib/tport-0.0.1-SNAPSHOT.jar
+NOT OK: 0 of 1   java -Xrs -Xmx1024m -Xms256m -Djava.ext.dirs=/bto/appl/LNPGW/CVoipGwServer
+NOT OK: 0 of 1   /bto/appl/LNPGW/InboundServer/lib/InboundServer.jar
+Return Status=34 itmanagement itbasic_log itlocator itnaming itconfig_rep itnode_daemon consrv lsm SplitMonitor utilsSrv lnpToolsSrv rssquerysrv validSrv ossmSrv sogSrv SOCollector sosa lautoMgr LautoLoadBal lsrE6 lsrNotifyE6Srv svsyncer RponSrv idlxmlcvt lsrNotifyE6Srv_FC SVCreator soamanager SoaManagerWS.jar socsproc FileHandler lsms tport-0.0.1-SNAPSHOT.jar CVoipGwServer InboundServer.jar
+jht005cc:/bto/appl/LNPGW/lnp_e2a/etc/bin date
+Sun Sep 22 00:17:21 CDT 2024
+jht005cc:/bto/appl/LNPGW/lnp_e2a/etc/bin cd /bto/appl/LNPGW/config
+jht005cc:/bto/appl/LNPGW/config ./DR_RollBack.sh
+2024-09-22 00:28:02 CDT DR_RollBack.sh executed
+DR now back to it's original/Prod config
+Done
+jht005cc:/bto/appl/LNPGW/config ls -lrt
+total 732
+-rw-r-----   1 lnpgw      lnpgw        13602 Jun 23  2017 GlobalPlatform.properties.20170623
+-rw-r-----   1 lnpgw      lnpgw        14238 Sep 15  2019 GlobalPlatform.properties_20190915
+-rw-r-----   1 lnpgw      lnpgw        14412 Oct 16  2020 GlobalPlatform.properties_bkp_20201017
+-rw-r-----   1 lnpgw      lnpgw         6841 Oct 16  2020 Global.properties_bkp_20201017
+-rw-r--r--   1 lnpgw      lnpgw          268 Oct 17  2020 RponSrv.ini
+-rw-r--r--   1 lnpgw      lnpgw        22137 Oct 17  2020 lnpgw.cfg
+-rw-r--r--   1 lnpgw      lnpgw          422 Oct 17  2020 startup.cfg
+drwxr-xr-x   2 lnpgw      lnpgw           96 Oct 17  2020 lib
+drwxr-xr-x   2 lnpgw      lnpgw         1024 Dec 11  2020 fac_chk
+-rw-r-----   1 lnpgw      lnpgw         6841 Jul 17  2021 Global.properties_bkp_20210716
+-rw-r--r--   1 lnpgw      lnpgw         6841 Jul 17  2021 Global.properties
+drwxr-x---   4 lnpgw      lnpgw         2048 Jul 29  2022 cm
+drwxr-xr-x  26 lnpgw      lnpgw         1024 Aug 24  2023 initial
+drwxr-xr-x   4 lnpgw      lnpgw         1024 Aug 25  2023 DR_with_Prod_configs
+drwxr-xr-x   4 lnpgw      lnpgw         1024 Aug 25  2023 DR_with_ST1_configs
+-rwxr-xr-x   1 lnpgw      lnpgw       256000 Aug 25  2023 DR_Exersize.tar.xz
+-rwxr-xr-x   1 lnpgw      lnpgw          118 Aug 30  2023 DR_Akash_Test.sh
+-rwxr-xr-x   1 lnpgw      lnpgw         2576 Aug 30  2023 DR_Activate.sh
+-rwxr-x---   1 lnpgw      lnpgw         1377 Aug 30  2023 DR_RollBack.sh
+-rw-r--r--   1 lnpgw      lnpgw          123 Sep 21 23:59 lnp.desc
+-rw-r--r--   1 lnpgw      lnpgw        14267 Sep 21 23:59 GlobalPlatform.properties
+-rw-r-----   1 lnpgw      lnpgw          292 Sep 22 00:28 audit.log
+jht005cc:/bto/appl/LNPGW/config cd initial
+jht005cc:/bto/appl/LNPGW/config/initial ls -lrt
+total 150
+drwxr-xr-x   3 lnpgw      lnpgw         1024 Feb 23  2014 DR.jht005cc.test
+drwxr-x---   3 lnpgw      lnpgw         1024 Jul 16  2014 DR.jht005cc.old
+drwxr-xr-x   2 lnpgw      lnpgw         1024 Oct 17  2020 CLEC.lhp007ac
+drwxr-xr-x   2 lnpgw      lnpgw         1024 Oct 17  2020 RS2.jht004ce
+drwxr-xr-x   2 lnpgw      lnpgw         1024 Oct 17  2020 ST2.jht004cf
+drwxr-xr-x   2 lnpgw      lnpgw         1024 Oct 17  2020 STAGE.lhp007be
+drwxr-xr-x   2 lnpgw      lnpgw         1024 Oct 17  2020 FIE.jht004cg
+drwxr-xr-x   2 lnpgw      lnpgw         1024 Oct 17  2020 STAGE.lhp007ce
+drwxr-xr-x   2 lnpgw      lnpgw         1024 Oct 17  2020 PSE.jht004dd
+drwxr-xr-x   2 lnpgw      lnpgw         1024 Oct 17  2020 VT.jht004da
+drwxr-xr-x   2 lnpgw      lnpgw         1024 Oct 17  2020 RS1.jht004db
+drwxr-xr-x   2 lnpgw      lnpgw         1024 Oct 17  2020 ST1.jht004dc
+drwxr-xr-x   2 lnpgw      lnpgw         1024 Oct 17  2020 PROD.lhp007db
+drwxr-xr-x   2 lnpgw      lnpgw         1024 Oct 17  2020 DEVMAINT.jht006ac
+drwxr-xr-x   2 lnpgw      lnpgw         1024 Oct 17  2020 DEVSEV1.jht006ad
+drwxr-xr-x   2 lnpgw      lnpgw         1024 Oct 17  2020 CITMAINT.jht005bb
+drwxr-xr-x   2 lnpgw      lnpgw         1024 Oct 17  2020 DEVTRI.jht005ab
+drwxr-xr-x   2 lnpgw      lnpgw         1024 Oct 17  2020 CITSEV1.jht005dc
+drwxr-xr-x   2 lnpgw      lnpgw         1024 Oct 17  2020 CITTRI.jht005dd
+drwxr-xr-x   2 lnpgw      lnpgw         1024 Oct 17  2020 PROD.lhp007aa
+drwxr-xr-x   5 lnpgw      lnpgw         2048 Sep 25  2021 DR.jht005cc_Backup.BAD
+drwxr-xr-x   2 lnpgw      lnpgw         1024 Sep 26  2021 DR.jht005cc_Exercise_ST1
+drwxr-x---   2 lnpgw      lnpgw         1024 Sep 15  2022 DR.jht005cc_ST1_DR_exercise_20220918
+-rwxr-xr-x   1 lnpgw      lnpgw        51200 Sep 18  2022 DR.jht005cc_ST1_Replica_for_2022.tar.xz
+drwxr-x---   2 lnpgw      lnpgw         1024 Sep  3  2023 DR.jht005cc
+jht005cc:/bto/appl/LNPGW/config/initial cd DR.jht005cc
+jht005cc:/bto/appl/LNPGW/config/initial/DR.jht005cc ls -lrt
+total 222
+-rw-r--r--   1 lnpgw      lnpgw        14485 Sep 22 00:28 GlobalPlatform.properties
+-rw-r--r--   1 lnpgw      lnpgw          413 Sep 22 00:28 SGGNSIORPRD_6.ior
+-rw-r--r--   1 lnpgw      lnpgw          413 Sep 22 00:28 SGGNSIORPRD_7.ior
+-rw-r--r--   1 lnpgw      lnpgw          413 Sep 22 00:28 SGGNSIORPRD_8.ior
+-rw-r-----   1 lnpgw      lnpgw        14238 Sep 22 00:28 GlobalPlatform.properties_20190915
+-rw-r-----   1 lnpgw      lnpgw        14412 Sep 22 00:28 GlobalPlatform.properties_20200718
+-rw-r-----   1 lnpgw      lnpgw        14368 Sep 22 00:28 GlobalPlatform.properties.20220729
+-rw-r-----   1 lnpgw      lnpgw        14368 Sep 22 00:28 BKP_BFR_TPORT_20220918_GlobalPlatform.properties
+-rw-r--r--   1 lnpgw      lnpgw          413 Sep 22 00:28 SGGNSIORPRD_5.ior
+-rw-r--r--   1 lnpgw      lnpgw          413 Sep 22 00:28 SGGNSIORPRD_4.ior
+-rw-r--r--   1 lnpgw      lnpgw          413 Sep 22 00:28 SGGNSIORPRD_3.ior
+-rw-r--r--   1 lnpgw      lnpgw          122 Sep 22 00:28 lnp.desc
+-rw-r--r--   1 lnpgw      lnpgw          723 Sep 22 00:28 odbc.ini
+-rw-r--r--   1 lnpgw      lnpgw          186 Sep 22 00:28 dbaccess.profile
+-rw-r--r--   1 lnpgw      lnpgw        10114 Sep 22 00:28 lauto
+-rw-r--r--   1 lnpgw      lnpgw         1609 Sep 22 00:28 lnpgwPlatform.profile
+-rw-r--r--   1 lnpgw      lnpgw          413 Sep 22 00:28 SGGNSIORPRD_1.ior
+-rw-r--r--   1 lnpgw      lnpgw          413 Sep 22 00:28 SGGNSIORPRD_2.ior
+-rwxr-x---   1 lnpgw      lnpgw        14233 Sep 22 00:28 temp.properties
+jht005cc:/bto/appl/LNPGW/config/initial/DR.jht005cc grep jht004bb_s5_tcp *
+temp.properties:INFORMIXSERVER=jht004bb_s5_tcp
+temp.properties:SVSYNCERINFSRVNAME=jht004bb_s5_tcp
+jht005cc:/bto/appl/LNPGW/config/initial/DR.jht005cc date
+Sun Sep 22 00:31:32 CDT 2024
+jht005cc:/bto/appl/LNPGW/config/initial/DR.jht005cc
